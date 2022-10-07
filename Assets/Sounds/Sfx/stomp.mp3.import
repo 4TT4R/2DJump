@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/stomp.mp3-537d383cd5c369ad8896f208c03fd9ab.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Sfx/stomp.mp3"
+dest_files=[ "res://.import/stomp.mp3-537d383cd5c369ad8896f208c03fd9ab.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

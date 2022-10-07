@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Scripts/Main.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Sounds/Sfx/click.wav" type="AudioStream" id=2]
+[ext_resource path="res://Assets/Sounds/Sfx/door_go.wav" type="AudioStream" id=3]
+[ext_resource path="res://Assets/Scripts/Save.gd" type="Script" id=4]
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[node name="door_go" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Save" type="Node2D" parent="."]
+script = ExtResource( 4 )
