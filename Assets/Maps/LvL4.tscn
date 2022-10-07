@@ -1,8 +1,7 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Scripts/UI.gd" type="Script" id=2]
-[ext_resource path="res://Assets/Scripts/Player.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=2]
 [ext_resource path="res://Assets/UI.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/Objects/Entities/player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=6]
@@ -17,11 +16,10 @@ font_data = ExtResource( 7 )
 default_font = SubResource( 7 )
 
 [node name="LvL4" type="Node2D"]
+script = ExtResource( 2 )
 
-[node name="Player" type="KinematicBody2D" parent="." groups=["Palayer", "Player"] instance=ExtResource( 5 )]
+[node name="Player" parent="." groups=["Player"] instance=ExtResource( 5 )]
 position = Vector2( 619, 8708 )
-z_index = 2
-script = ExtResource( 3 )
 BOUNDS_MAX = Vector2( 20000, 20000 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -37,10 +35,7 @@ margin_bottom = -796.0
 rect_min_size = Vector2( 100, 100 )
 theme = SubResource( 8 )
 
-[node name="UI" type="Node2D" parent="Player/Camera2D" instance=ExtResource( 4 )]
-position = Vector2( 15, 0 )
-z_index = 999
-script = ExtResource( 2 )
+[node name="UI" parent="Player/Camera2D" instance=ExtResource( 4 )]
 
 [node name="BG" type="TileMap" parent="."]
 position = Vector2( 896, 640 )

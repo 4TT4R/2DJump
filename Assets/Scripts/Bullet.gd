@@ -10,6 +10,8 @@ extends Area2D
 export(String, "UP", "DOWN", "RIGHT", "LEFT") var direction
 var velocity
 var trigered = false
+var counter = 0
+export var triger_number = 1
 export var SPEED = 5000
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -35,7 +37,9 @@ func _process(delta):
 
 func _on_Triger_area_entered(area):
 	if area.is_in_group("Player"):
-		trigered = true
+		counter += 1
+		if counter >= triger_number:
+			trigered = true
 	
 
 

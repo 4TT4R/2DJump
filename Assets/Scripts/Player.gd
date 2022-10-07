@@ -66,28 +66,31 @@ func move(delta):
 	direction.y+= GRAVITY*delta
 
 func _physics_process(delta):
-
-	if position.y > BOUNDS_MAX.y:
-		once = false
-		dead = true
-		print(position.y)
-		print(BOUNDS_MAX.y)
-		print("die fall")
-#	reset x direction on every start cyklus couase when don't player continue move infinitly 
-	direction.x = 0
-#	function to control which key is pressed and set move adequary to it
-	move(delta)
-	if direction.x != 0 && !get_node("Sfx/walk").playing && can_jump:
-		get_node("Sfx/walk").play()
-	elif direction.x == 0 || !can_jump || dead:
-		get_node("Sfx/walk").stop()
-	direction = move_and_slide(direction, Vector2.UP)
-#	control animations
-	animation_controller()
-	if direction.y> 500:
-		can_jump = false
-	if is_on_floor():
-		can_jump = true
+	if !get_parent().is_paused:
+		if(Input.is_action_just_pressed("r")):
+			get_parent().get_parent().die()
+		if position.y > BOUNDS_MAX.y:
+			once = false
+			dead = true
+			print(position.y)
+			print(BOUNDS_MAX.y)
+			print("die fall")
+	#	reset x direction on every start cyklus couase when don't player continue move infinitly 
+		direction.x = 0
+	#	function to control which key is pressed and set move adequary to it
+		
+		move(delta)
+		if direction.x != 0 && !get_node("Sfx/walk").playing && can_jump:
+			get_node("Sfx/walk").play()
+		elif direction.x == 0 || !can_jump || dead:
+			get_node("Sfx/walk").stop()
+		direction = move_and_slide(direction, Vector2.UP)
+	#	control animations
+		animation_controller()
+		if direction.y> 500:
+			can_jump = false
+		if is_on_floor():
+			can_jump = true
 
 func animation_controller():
 	if direction.x != 0 && direction.y == 0:
