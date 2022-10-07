@@ -70,7 +70,9 @@ func _physics_process(delta):
 	if position.y > BOUNDS_MAX.y:
 		once = false
 		dead = true
-		
+		print(position.y)
+		print(BOUNDS_MAX.y)
+		print("die fall")
 #	reset x direction on every start cyklus couase when don't player continue move infinitly 
 	direction.x = 0
 #	function to control which key is pressed and set move adequary to it

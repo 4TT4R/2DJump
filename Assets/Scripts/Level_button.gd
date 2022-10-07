@@ -9,7 +9,7 @@ extends Node2D
 
 
 export var Unlock = false
-export var next_Level = "Level Name"
+export var Level_Name = "Level Name"
 export var Level = "00"
 var medail = 0
 var time = "--:--:--"
@@ -63,6 +63,6 @@ func _ready():
 func _on_Button_pressed():
 	if Unlock:
 		get_parent().get_parent().get_node("click").play(0)
-		get_parent().get_parent().changelevel(next_Level)
+		get_parent().get_parent().changelevel(Level_Name)
 
 

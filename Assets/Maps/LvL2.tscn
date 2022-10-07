@@ -39,10 +39,9 @@ tile_data = PoolIntArray( -458874, 3, 0, -458873, 5, 0, -458872, 3, 0, -458871, 
 
 [node name="Player" parent="." groups=["Player"] instance=ExtResource( 3 )]
 position = Vector2( 830, 8675 )
-BOUNDS_MAX = Vector2( 20000, 20000 )
+BOUNDS_MAX = Vector2( 20000, 1 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-current = true
 zoom = Vector2( 5, 5 )
 script = ExtResource( 9 )
 

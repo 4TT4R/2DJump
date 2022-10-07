@@ -15,6 +15,8 @@ var is_paused = false
 func _ready():
 	pass
 func _process(delta):
+	if Input.is_action_just_pressed("esc"):
+		_on_Pause_pressed()
 	get_node("Player/Camera2D/Label").text = str(get_parent().hours)+":"+str(get_parent().minuts)+":" + "%0.2f" % get_parent().seconds
 	get_parent().paused = is_paused
 	
