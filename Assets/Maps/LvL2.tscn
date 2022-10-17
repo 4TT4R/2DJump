@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Assets/Objects/Objects/Saw.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=2]
@@ -10,8 +10,6 @@
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=9]
 [ext_resource path="res://Assets/UI.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Assets/Scripts/Player.gd" type="Script" id=11]
-[ext_resource path="res://Assets/Scripts/UI.gd" type="Script" id=12]
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -120,12 +118,11 @@ position = Vector2( 9650, 12799 )
 
 [node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 23678, 13207 )
+next_level = "LvL03"
 level = "LvL02"
 
-[node name="Player" type="KinematicBody2D" parent="." groups=["Palayer"] instance=ExtResource( 3 )]
+[node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1151, 8553 )
-z_index = 2
-script = ExtResource( 11 )
 BOUNDS_MAX = Vector2( 20000, 11826 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -141,7 +138,4 @@ margin_bottom = -796.0
 rect_min_size = Vector2( 100, 100 )
 theme = SubResource( 8 )
 
-[node name="UI" type="Node2D" parent="Player/Camera2D" instance=ExtResource( 10 )]
-position = Vector2( 15, 0 )
-z_index = 999
-script = ExtResource( 12 )
+[node name="UI" parent="Player/Camera2D" instance=ExtResource( 10 )]

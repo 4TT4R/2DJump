@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Bullet.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Assets/Scripts/Door.gd" type="Script" id=9]
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -17,7 +16,7 @@ font_data = ExtResource( 7 )
 [sub_resource type="Theme" id=8]
 default_font = SubResource( 7 )
 
-[node name="LvL3" type="Node2D"]
+[node name="LvL95" type="Node2D"]
 script = ExtResource( 1 )
 
 [node name="Player" parent="." groups=["Player"] instance=ExtResource( 4 )]
@@ -87,13 +86,7 @@ position = Vector2( 8620, 12016 )
 [node name="Bullet10" parent="Bullets" instance=ExtResource( 8 )]
 position = Vector2( 9789, 12036 )
 
-[node name="Door" type="Area2D" parent="." instance=ExtResource( 6 )]
+[node name="Door" parent="." instance=ExtResource( 6 )]
 position = Vector2( 10486, 11415 )
-collision_layer = 2
-collision_mask = 2
-script = ExtResource( 9 )
-next_level = "LvL02"
-level = "LvL01"
-
-[connection signal="area_entered" from="Door" to="Door" method="_on_door_area_entered"]
-[connection signal="area_exited" from="Door" to="Door" method="_on_door_area_exited"]
+next_level = "LvL96"
+level = "LvL95"

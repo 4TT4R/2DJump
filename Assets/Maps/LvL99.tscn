@@ -206,8 +206,8 @@ triger_number = 7
 
 [node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 15739, 11151 )
-next_level = "LvL02"
-level = "LvL01"
+next_level = "LvL100"
+level = "LvL99"
 
 [node name="Collect" parent="." instance=ExtResource( 9 )]
 position = Vector2( 15224, 10612 )
