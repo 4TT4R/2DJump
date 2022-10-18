@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Bullet.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=11]
 
 [sub_resource type="DynamicFont" id=7]
@@ -249,3 +250,8 @@ position = Vector2( 1669, 9568 )
 
 [node name="Collect" parent="." instance=ExtResource( 11 )]
 position = Vector2( 8349, 8713 )
+
+[node name="Door" parent="." instance=ExtResource( 9 )]
+position = Vector2( 35680, 11063 )
+next_level = "LvL101"
+level = "LvL100"
