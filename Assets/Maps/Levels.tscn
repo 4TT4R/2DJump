@@ -59,6 +59,7 @@ Level = "02"
 
 [node name="Level_button4" parent="." instance=ExtResource( 1 )]
 position = Vector2( 1075, 15 )
+Unlock = true
 Level_Name = "LvL3"
 Level = "03"
 

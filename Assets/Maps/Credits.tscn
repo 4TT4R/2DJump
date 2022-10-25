@@ -40,10 +40,10 @@ editor_draw_limits = true
 script = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = -3813.0
-margin_top = -1473.0
-margin_right = 887.0
-margin_bottom = 1181.0
+margin_left = -3781.0
+margin_top = -1486.0
+margin_right = 919.0
+margin_bottom = 1168.0
 theme = SubResource( 2 )
 text = "
 Textures:

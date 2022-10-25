@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=5]
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
-[ext_resource path="res://Assets/Scripts/Door.gd" type="Script" id=8]
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -52,13 +51,7 @@ cell_size = Vector2( 128, 128 )
 format = 1
 tile_data = PoolIntArray( 4390985, 0, 0, 4390993, 22, 0, 4390995, 23, 0, 4390997, 24, 0, 4587522, 22, 0, 4587524, 23, 0, 4587526, 23, 0, 4587528, 24, 0, 4718663, 0, 0, 4784143, 0, 0, 4784151, 0, 0, 4784160, 0, 0, 5046310, 0, 0, 5046324, 0, 0, 5046340, 0, 0, 5308462, 0, 0, 5308473, 0, 0, 5308481, 0, 0 )
 
-[node name="Door" type="Area2D" parent="." instance=ExtResource( 6 )]
+[node name="Door" parent="." instance=ExtResource( 6 )]
 position = Vector2( 11001, 8342 )
-collision_layer = 2
-collision_mask = 2
-script = ExtResource( 8 )
 next_level = "LvL92"
 level = "LvL91"
-
-[connection signal="area_entered" from="Door" to="Door" method="_on_door_area_entered"]
-[connection signal="area_exited" from="Door" to="Door" method="_on_door_area_exited"]
