@@ -21,12 +21,16 @@ func save(key, next_level, colectable, time):
 	if colectable:
 		levels_colatable[key] = colectable
 	if levels_time[key] != DEFAULT_TIME:
-		
+		print(key)
 		var last_time = levels_time[key].split(":")
 		var curent_time = time.split(":")
 		print(last_time, " last", "\n", curent_time," current")
-		if (last_time[0]>= curent_time[0] && last_time[1]>= curent_time[1] && last_time[2]>= curent_time[2]):
+
+		if (last_time[0]>= curent_time[0] || last_time[1]>= curent_time[1] || last_time[2]>= curent_time[2]):
+			
 			levels_time[key] = time
+		else:
+			levels_time[key] = last_time
 	else:
 		levels_time[key] = time
 	saveT()
