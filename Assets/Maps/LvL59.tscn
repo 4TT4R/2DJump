@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=11 format=2]
+=======
+[gd_scene load_steps=12 format=2]
+>>>>>>> Stashed changes
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
@@ -8,6 +12,10 @@
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=8]
+<<<<<<< Updated upstream
+=======
+[ext_resource path="res://Assets/Scripts/Door.gd" type="Script" id=9]
+>>>>>>> Stashed changes
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -52,6 +60,7 @@ cell_size = Vector2( 128, 128 )
 format = 1
 tile_data = PoolIntArray( 4587521, 22, 0, 4587523, 12, 0, 4587525, 12, 0, 4587527, 12, 0, 4587529, 24, 0, 4587535, 22, 0, 4587537, 12, 0, 4587539, 12, 0, 4587541, 12, 0, 4587543, 24, 0, 4653138, 22, 0, 4653140, 12, 0, 4653142, 12, 0, 4653144, 12, 0, 4653146, 24, 0, 4653153, 22, 0, 4653155, 12, 0, 4653157, 12, 0, 4653159, 12, 0, 4653161, 24, 0, 4784157, 22, 0, 4784159, 12, 0, 4784161, 12, 0, 4784163, 12, 0, 4784165, 24, 0, 4784171, 22, 0, 4784173, 12, 0, 4784175, 12, 0, 4784177, 12, 0, 4784179, 24, 0, 4784197, 22, 0, 4784199, 12, 0, 4784201, 12, 0, 4784203, 12, 0, 4784205, 24, 0, 4915255, 22, 0, 4915257, 12, 0, 4915259, 12, 0, 4915261, 12, 0, 4915263, 12, 0, 4915265, 24, 0 )
 
+<<<<<<< Updated upstream
 [node name="Door" parent="." instance=ExtResource( 6 )]
 position = Vector2( 13540, 8856 )
 next_level = "LvL02"
@@ -59,3 +68,18 @@ level = "LvL01"
 
 [node name="Collect" parent="." instance=ExtResource( 8 )]
 position = Vector2( 10150, 8403 )
+=======
+[node name="Door" type="Area2D" parent="." instance=ExtResource( 6 )]
+position = Vector2( 13540, 8856 )
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 9 )
+next_level = "LvL02"
+level = "LvL01"
+
+[node name="Collect" type="Node2D" parent="." instance=ExtResource( 8 )]
+position = Vector2( 10150, 8403 )
+
+[connection signal="area_entered" from="Door" to="Door" method="_on_door_area_entered"]
+[connection signal="area_exited" from="Door" to="Door" method="_on_door_area_exited"]
+>>>>>>> Stashed changes

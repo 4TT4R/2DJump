@@ -1,10 +1,18 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=11 format=2]
+=======
+[gd_scene load_steps=12 format=2]
+>>>>>>> Stashed changes
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://Assets/UI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Objects/Entities/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=5]
+<<<<<<< Updated upstream
+=======
+[ext_resource path="res://Assets/Scripts/Door.gd" type="Script" id=6]
+>>>>>>> Stashed changes
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=9]
@@ -52,6 +60,7 @@ cell_size = Vector2( 128, 128 )
 format = 1
 tile_data = PoolIntArray( 4456513, 22, 0, 4456515, 12, 0, 4456517, 12, 0, 4456519, 12, 0, 4456521, 24, 0, 4456528, 22, 0, 4456530, 12, 0, 4456532, 12, 0, 4456534, 12, 0, 4456536, 12, 0, 4456538, 24, 0, 4456544, 22, 0, 4456546, 12, 0, 4456548, 12, 0, 4456550, 12, 0, 4456552, 12, 0, 4456554, 24, 0, 4522113, 22, 0, 4522115, 12, 0, 4522117, 12, 0, 4522119, 12, 0, 4522121, 24, 0, 4522127, 22, 0, 4522129, 12, 0, 4522131, 12, 0, 4522133, 12, 0, 4522135, 12, 0, 4522137, 24, 0, 4587521, 22, 0, 4587523, 12, 0, 4587525, 12, 0, 4587527, 24, 0, 4587575, 22, 0, 4587577, 12, 0, 4587579, 12, 0, 4587581, 12, 0, 4587583, 24, 0, 4653168, 22, 0, 4653170, 12, 0, 4653172, 12, 0, 4653174, 12, 0, 4653176, 12, 0, 4653178, 12, 0, 4653180, 24, 0, 4718635, 22, 0, 4718637, 12, 0, 4718639, 12, 0, 4718641, 12, 0, 4718643, 24, 0, 4849678, 22, 0, 4849680, 12, 0, 4849682, 12, 0, 4849684, 12, 0, 4849686, 12, 0, 4849688, 24, 0, 4849695, 22, 0, 4849697, 12, 0, 4849699, 12, 0, 4849701, 12, 0, 4849703, 24, 0 )
 
+<<<<<<< Updated upstream
 [node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 19679, 8601 )
 next_level = "LvL02"
@@ -59,3 +68,18 @@ level = "LvL01"
 
 [node name="Collect" parent="." instance=ExtResource( 9 )]
 position = Vector2( 16249, 8085 )
+=======
+[node name="Door" type="Area2D" parent="." instance=ExtResource( 8 )]
+position = Vector2( 19679, 8601 )
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 6 )
+next_level = "LvL02"
+level = "LvL01"
+
+[node name="Collect" type="Node2D" parent="." instance=ExtResource( 9 )]
+position = Vector2( 16249, 8085 )
+
+[connection signal="area_entered" from="Door" to="Door" method="_on_door_area_entered"]
+[connection signal="area_exited" from="Door" to="Door" method="_on_door_area_exited"]
+>>>>>>> Stashed changes
