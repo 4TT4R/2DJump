@@ -11,6 +11,8 @@ position = Vector2( -71, 9328 )
 
 [node name="Door" parent="." index="2"]
 position = Vector2( 4979, 12183 )
+next_level = "LvL06"
+level = "LvL05"
 
 [node name="Tiles" parent="." index="3"]
 tile_data = PoolIntArray( 4980734, 11, 0, 4915200, 12, 0, 4915202, 12, 0, 4915204, 12, 0, 4915206, 12, 0, 4915208, 12, 0, 4915210, 12, 0, 4915212, 12, 0, 4915214, 13, 0, 4915216, 12, 0, 4915218, 12, 0, 4915220, 12, 0, 4915222, 13, 0 )
