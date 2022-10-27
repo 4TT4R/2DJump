@@ -1,11 +1,10 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://Assets/UI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Objects/Entities/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=5]
-[ext_resource path="res://Assets/Scripts/Door.gd" type="Script" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=9]
@@ -53,16 +52,10 @@ cell_size = Vector2( 128, 128 )
 format = 1
 tile_data = PoolIntArray( 4390979, 536870936, 0, 4390981, 536870924, 0, 4390983, 536870924, 0, 4390985, 536870924, 0, 4390987, 536870924, 0, 4390989, 536870934, 0, 4390996, 536870912, 0, 4391002, 536870936, 0, 4391004, 536870924, 0, 4391006, 536870924, 0, 4391008, 536870924, 0, 4391010, 536870924, 0, 4391012, 536870934, 0, 4456493, 25, 0, 4456500, 22, 0, 4456502, 536870924, 0, 4456504, 536870924, 0, 4456506, 536870924, 0, 4456508, 536870924, 0, 4456510, 24, 0, 4587520, 22, 0, 4587522, 536870924, 0, 4587524, 536870924, 0, 4587526, 24, 0, 4653099, 25, 0, 4784141, 22, 0, 4784143, 536870924, 0, 4784145, 536870924, 0, 4784147, 536870924, 0, 4784149, 536870924, 0, 4784151, 536870924, 0, 4784153, 24, 0, 4849705, 25, 0, 5046305, 22, 0, 5046307, 536870924, 0, 5046309, 536870924, 0, 5046311, 24, 0, 5242974, 536870936, 0, 5242976, 536870924, 0, 5242978, 536870924, 0, 5242980, 536870934, 0 )
 
-[node name="Door" type="Area2D" parent="." instance=ExtResource( 9 )]
+[node name="Door" parent="." instance=ExtResource( 9 )]
 position = Vector2( 12296, 10002 )
-collision_layer = 2
-collision_mask = 2
-script = ExtResource( 6 )
-next_level = "LvL02"
-level = "LvL01"
+next_level = "LvL75"
+level = "LvL74"
 
-[node name="Collect" type="Node2D" parent="." instance=ExtResource( 8 )]
+[node name="Collect" parent="." instance=ExtResource( 8 )]
 position = Vector2( 5126, 8402 )
-
-[connection signal="area_entered" from="Door" to="Door" method="_on_door_area_entered"]
-[connection signal="area_exited" from="Door" to="Door" method="_on_door_area_exited"]

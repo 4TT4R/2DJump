@@ -55,8 +55,8 @@ tile_data = PoolIntArray( 4259849, 11, 0, 4259851, 12, 0, 4259853, 12, 0, 425985
 
 [node name="Door" parent="." instance=ExtResource( 9 )]
 position = Vector2( 13545, 9625 )
-next_level = "LvL02"
-level = "LvL01"
+next_level = "LvL91"
+level = "LvL90"
 
 [node name="Collect" parent="." instance=ExtResource( 10 )]
 position = Vector2( 1296, 7454 )

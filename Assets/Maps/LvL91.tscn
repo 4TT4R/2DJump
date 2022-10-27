@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
 [gd_scene load_steps=10 format=2]
-=======
-[gd_scene load_steps=12 format=2]
->>>>>>> Stashed changes
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
@@ -11,11 +7,6 @@
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=5]
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
-<<<<<<< Updated upstream
-=======
-[ext_resource path="res://Assets/Objects/Objects/Bullet.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=9]
->>>>>>> Stashed changes
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -64,107 +55,3 @@ tile_data = PoolIntArray( 4390985, 0, 0, 4390993, 22, 0, 4390995, 23, 0, 4390997
 position = Vector2( 11001, 8342 )
 next_level = "LvL92"
 level = "LvL91"
-<<<<<<< Updated upstream
-=======
-
-[node name="Collect" parent="." instance=ExtResource( 9 )]
-position = Vector2( 4263, 8158 )
-
-[node name="Bullets" type="Node2D" parent="."]
-
-[node name="Bullet" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 1525, 9338 )
-
-[node name="Bullet2" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 2229, 9762 )
-
-[node name="Bullet3" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 3309, 9770 )
-
-[node name="Bullet4" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 4533, 9778 )
-
-[node name="Bullet5" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 5301, 10354 )
-
-[node name="Bullet6" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 4253, 10266 )
-direction = "RIGHT"
-
-[node name="Bullet7" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 4253, 10266 )
-direction = "RIGHT"
-triger_number = 2
-
-[node name="Bullet8" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 4253, 10266 )
-direction = "RIGHT"
-triger_number = 3
-
-[node name="Bullet9" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 4253, 10266 )
-direction = "RIGHT"
-triger_number = 4
-
-[node name="Bullet10" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 4253, 10266 )
-direction = "RIGHT"
-triger_number = 5
-
-[node name="Bullet11" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 4253, 10266 )
-direction = "RIGHT"
-triger_number = 6
-
-[node name="Bullet12" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 4253, 10266 )
-direction = "RIGHT"
-triger_number = 7
-
-[node name="Bullet13" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 4253, 10266 )
-direction = "RIGHT"
-triger_number = 8
-
-[node name="Bullet14" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 4253, 10266 )
-direction = "RIGHT"
-triger_number = 9
-
-[node name="Bullet15" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 4253, 10266 )
-direction = "RIGHT"
-triger_number = 10
-
-[node name="Bullet16" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 4253, 10266 )
-direction = "RIGHT"
-triger_number = 11
-
-[node name="Bullet17" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 6341, 10578 )
-
-[node name="Bullet18" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 6901, 10290 )
-
-[node name="Bullet19" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 7141, 10722 )
-
-[node name="Bullet20" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 7869, 10714 )
-
-[node name="Bullet21" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 8629, 10634 )
-
-[node name="Bullet22" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 8997, 10162 )
-
-[node name="Bullet23" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 9325, 9514 )
-
-[node name="Bullet24" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 9629, 8978 )
-
-[node name="Bullet25" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( 9949, 8842 )
->>>>>>> Stashed changes

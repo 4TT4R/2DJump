@@ -16,6 +16,7 @@ var time = "--:--:--"
 var SFX = 1
 var paused = false
 var Music = 100
+export var is_pc = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$click.volume_db = SFX

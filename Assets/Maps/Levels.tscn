@@ -46,6 +46,9 @@ def_zoom = Vector2( 2, 2 )
 position = Vector2( 2, 2 )
 Unlock = true
 Level_Name = "LvL0"
+Gold = "00:13:00"
+Silver = "00:18:00"
+Bronze = "00:20:00"
 
 [node name="Level_button2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 351, -2 )

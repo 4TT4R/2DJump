@@ -1,11 +1,10 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://Assets/UI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Objects/Entities/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=5]
-[ext_resource path="res://Assets/Scripts/Door.gd" type="Script" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=9]
@@ -53,16 +52,10 @@ cell_size = Vector2( 128, 128 )
 format = 1
 tile_data = PoolIntArray( 4325495, 11, 0, 4325497, 12, 0, 4325499, 12, 0, 4325501, 12, 0, 4325503, 13, 0, 4391013, 11, 0, 4391015, 12, 0, 4391017, 12, 0, 4391019, 536870924, 0, 4391021, 536870924, 0, 4391023, 536870924, 0, 4391025, 13, 0, 4456533, 11, 0, 4456535, 536870924, 0, 4456537, 536870924, 0, 4456539, 536870924, 0, 4456541, 536870924, 0, 4456543, 13, 0, 4522033, 11, 0, 4522035, 536870924, 0, 4522037, 536870924, 0, 4522039, 536870924, 0, 4522041, 536870924, 0, 4522043, 13, 0, 4522051, 11, 0, 4522053, 536870924, 0, 4522055, 536870924, 0, 4522057, 536870924, 0, 4522059, 536870924, 0, 4522061, 13, 0, 4587522, 22, 0, 4587524, 23, 0, 4587526, 24, 0, 4587532, 11, 0, 4587534, 536870924, 0, 4587536, 536870924, 0, 4587538, 536870924, 0, 4587540, 536870924, 0, 4587542, 536870923, 0, 4587551, 11, 0, 4587553, 536870924, 0, 4587555, 536870924, 0, 4587557, 536870924, 0, 4587559, 536870924, 0, 4587561, 536870924, 0, 4587563, 13, 0 )
 
-[node name="Door" type="Area2D" parent="." instance=ExtResource( 9 )]
+[node name="Door" parent="." instance=ExtResource( 9 )]
 position = Vector2( 16363, 8213 )
-collision_layer = 2
-collision_mask = 2
-script = ExtResource( 6 )
-next_level = "LvL02"
-level = "LvL01"
+next_level = "LvL78"
+level = "LvL77"
 
-[node name="Collect" type="Node2D" parent="." instance=ExtResource( 8 )]
+[node name="Collect" parent="." instance=ExtResource( 8 )]
 position = Vector2( 13785, 7685 )
-
-[connection signal="area_entered" from="Door" to="Door" method="_on_door_area_entered"]
-[connection signal="area_exited" from="Door" to="Door" method="_on_door_area_exited"]

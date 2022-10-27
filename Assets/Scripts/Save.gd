@@ -26,11 +26,11 @@ func save(key, next_level, colectable, time):
 		var curent_time = time.split(":")
 		print(last_time, " last", "\n", curent_time," current")
 
-		if (last_time[0]>= curent_time[0] || last_time[1]>= curent_time[1] || last_time[2]>= curent_time[2]):
+		if (float(last_time[0])*3600 + float(last_time[1])*60 + float(last_time[2]) >= float(curent_time[0])*3600 + float(curent_time[1]) * 60 + float(curent_time[2])):
 			
 			levels_time[key] = time
 		else:
-			levels_time[key] = last_time
+			levels_time[key] = levels_time[key]
 	else:
 		levels_time[key] = time
 	saveT()

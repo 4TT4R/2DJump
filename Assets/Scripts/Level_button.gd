@@ -11,8 +11,13 @@ extends Node2D
 export var Unlock = false
 export var Level_Name = "Level Name"
 export var Level = "00"
+export var Gold = "00:00:00"
+export var Silver = "00:00:00"
+export var Bronze = "00:00:00"
+
 var medail = 0
 var time = "--:--:--"
+var def_time = "--:--:--"
 var colactable = false
 var gold = Color("ffd700")
 var silver = Color("c0c0c0")
@@ -40,15 +45,29 @@ func _ready():
 		get_node("Locked").visible = false
 	else:
 		get_node("Button").disabled = true
-	if medail == 0:
-		get_node("Medails/Bronze").modulate = locked
-		get_node("Medails/Silver").modulate = locked
-		get_node("Medails/Gold").modulate = locked
-	if medail == 1:
+	
+	get_node("Medails/Bronze").modulate = locked
+	get_node("Medails/Silver").modulate = locked
+	get_node("Medails/Gold").modulate = locked
+	
+	if time != def_time:
+		var time_arr = time.split(":")
+		
+		var Gold_arr = Gold.split(":")
+		var Silver_arr = Silver.split(":")
+		var Bronze_arr = Bronze.split(":")
+		
+		if (int(Gold_arr[0])*3600 + int(Gold_arr[1])*60 + int(Gold_arr[2]) >= int(time_arr[0])*3600 + int(time_arr[1]) * 60 + int(time_arr[2])):
+			medail = 3
+		elif (int(Silver_arr[0])*3600 + int(Silver_arr[1])*60 + int(Silver_arr[2]) >= int(time_arr[0])*3600 + int(time_arr[1]) * 60 + int(time_arr[2])):
+			medail = 2
+		elif (int(Bronze_arr[0])*3600 + int(Bronze_arr[1])*60 + int(Bronze_arr[2]) >= int(time_arr[0])*3600 + int(time_arr[1]) * 60 + int(time_arr[2])):
+			medail = 1
+	if medail >= 1:
 		get_node("Medails/Bronze").modulate = bronze
-	if medail == 2:
+	if medail >= 2:
 		get_node("Medails/Silver").modulate = silver
-	if medail == 3:
+	if medail >= 3:
 		get_node("Medails/Gold").modulate = gold
 	if colactable:
 		get_node("Collect").modulate = Color("ffffff")

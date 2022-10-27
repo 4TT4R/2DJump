@@ -60,8 +60,8 @@ z_index = -1
 
 [node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 14194, 9238 )
-next_level = "LvL02"
-level = "LvL01"
+next_level = "LvL88"
+level = "LvL87"
 
 [node name="Bullet" type="Node2D" parent="."]
 

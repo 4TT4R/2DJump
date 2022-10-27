@@ -1,11 +1,10 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://Assets/UI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Objects/Entities/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=5]
-[ext_resource path="res://Assets/Scripts/Door.gd" type="Script" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=9]
@@ -53,16 +52,10 @@ cell_size = Vector2( 128, 128 )
 format = 1
 tile_data = PoolIntArray( 4194364, 0, 0, 4194370, 22, 0, 4194372, 12, 0, 4194374, 12, 0, 4194376, 12, 0, 4194378, 12, 0, 4194380, 12, 0, 4194382, 12, 0, 4194384, 24, 0, 4194391, 22, 0, 4194393, 12, 0, 4194395, 12, 0, 4194397, 12, 0, 4194399, 12, 0, 4194401, 24, 0, 4390970, 0, 0, 4587521, 14, 0, 4587523, 18, 0, 4587525, 17, 0, 4587527, 16, 0, 4587532, 22, 0, 4587534, 23, 0, 4587536, 23, 0, 4587538, 24, 0, 4587545, 22, 0, 4587547, 12, 0, 4587549, 12, 0, 4587551, 12, 0, 4587553, 12, 0, 4587555, 12, 0, 4587557, 12, 0, 4587559, 24, 0, 4587566, 22, 0, 4587568, 12, 0, 4587570, 12, 0, 4587572, 12, 0, 4587574, 12, 0, 4587576, 24, 0, 4653070, 19, 0, 4653072, 21, 0, 4718595, 19, 0, 4718597, 21, 0 )
 
-[node name="Door" type="Area2D" parent="." instance=ExtResource( 8 )]
+[node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 12517, 7961 )
-collision_layer = 2
-collision_mask = 2
-script = ExtResource( 6 )
-next_level = "LvL02"
-level = "LvL01"
+next_level = "LvL80"
+level = "LvL79"
 
-[node name="Collect" type="Node2D" parent="." instance=ExtResource( 9 )]
+[node name="Collect" parent="." instance=ExtResource( 9 )]
 position = Vector2( 172, 8326 )
-
-[connection signal="area_entered" from="Door" to="Door" method="_on_door_area_entered"]
-[connection signal="area_exited" from="Door" to="Door" method="_on_door_area_exited"]

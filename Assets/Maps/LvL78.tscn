@@ -1,11 +1,10 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://Assets/UI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Objects/Entities/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=5]
-[ext_resource path="res://Assets/Scripts/Door.gd" type="Script" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=9]
@@ -53,16 +52,10 @@ cell_size = Vector2( 128, 128 )
 format = 1
 tile_data = PoolIntArray( 3211390, -1073741800, 0, 3342462, -1073741801, 0, 3473534, -1073741801, 0, 3604606, -1073741801, 0, 3735678, -1073741801, 0, 3866708, 22, 0, 3866716, 24, 0, 3866750, -1073741801, 0, 3932231, 22, 0, 3932239, 24, 0, 3997712, 0, 0, 3997717, 22, 0, 3997726, 24, 0, 3997735, 22, 0, 3997747, 0, 0, 3997756, 22, 0, 3997762, 24, 0, 3997822, -1073741802, 0, 4128865, 22, 0, 4128875, 24, 0, 4128880, 22, 0, 4128882, 23, 0, 4128884, 23, 0, 4128886, 23, 0, 4128888, 23, 0, 4128890, 23, 0, 4128892, 24, 0, 4194318, 0, 0, 4390924, 0, 0, 4587521, 22, 0, 4587523, 12, 0, 4587525, 23, 0, 4587527, 12, 0, 4587529, 24, 0, 4653061, 15, 0, 4653163, 0, 0, 4653168, 22, 0, 4653170, 23, 0, 4653172, 23, 0, 4653174, 23, 0, 4653176, 24, 0 )
 
-[node name="Door" type="Area2D" parent="." instance=ExtResource( 8 )]
+[node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 15469, 8854 )
-collision_layer = 2
-collision_mask = 2
-script = ExtResource( 6 )
-next_level = "LvL02"
-level = "LvL01"
+next_level = "LvL79"
+level = "LvL78"
 
-[node name="Collect" type="Node2D" parent="." instance=ExtResource( 9 )]
+[node name="Collect" parent="." instance=ExtResource( 9 )]
 position = Vector2( 13840, 8508 )
-
-[connection signal="area_entered" from="Door" to="Door" method="_on_door_area_entered"]
-[connection signal="area_exited" from="Door" to="Door" method="_on_door_area_exited"]
