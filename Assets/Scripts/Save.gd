@@ -20,6 +20,8 @@ func save(key, next_level, colectable, time):
 	unlocked_levels[next_level] = true
 	if colectable:
 		levels_colatable[key] = colectable
+	if !levels_time.has(key):
+		levels_time[key] = time
 	if levels_time[key] != DEFAULT_TIME:
 		print(key)
 		var last_time = levels_time[key].split(":")
