@@ -45,6 +45,12 @@ func die():
 	remove_child(current_scene)
 	current_scene = load(current_scene_path).instance()
 	add_child(current_scene)
+	
+func restart():
+	remove_child(current_scene)
+	current_scene = load(current_scene_path).instance()
+	add_child(current_scene)
+	seconds = 0
 # Called every frame. 'delta' is the seconds time since the previous frame.
 func _process(delta):
 	if !paused:

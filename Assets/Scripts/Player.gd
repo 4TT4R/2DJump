@@ -25,7 +25,6 @@ func _ready():
 	sprite = get_node("Sprite")
 
 func _process(_delta):
-
 	if dead:
 		position-=Vector2(10,5)
 		if not once:
@@ -41,7 +40,9 @@ func _process(_delta):
 			get_node("Timer").stop()
 
 			get_parent().get_parent().die()
-
+	if(Input.is_action_just_pressed("r")):
+		get_parent().get_parent().restart()
+	
 
 
 
@@ -65,10 +66,12 @@ func move(delta):
 
 	direction.y+= GRAVITY*delta
 
+
+	
+
 func _physics_process(delta):
+	
 	if !get_parent().is_paused:
-		if(Input.is_action_just_pressed("r")):
-			get_parent().get_parent().die()
 		if position.y > BOUNDS_MAX.y:
 			once = false
 			dead = true
