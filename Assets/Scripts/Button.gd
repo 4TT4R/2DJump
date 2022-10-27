@@ -47,6 +47,8 @@ func _on_Credits_pressed():
 func play_click():
 	get_parent().get_parent().get_parent().get_node("click").play(0)
 
+func play_click2():
+	get_parent().get_parent().get_parent().get_parent().get_node("click").play(0)
 
 func _on_Settings_pressed():
 	play_click()
@@ -54,5 +56,16 @@ func _on_Settings_pressed():
 
 
 func _on_Back_pressed():
-	play_click()
-	get_parent().get_parent().get_parent().changelevel("Main Menu")
+	play_click2()
+	get_parent().get_parent().get_parent().get_parent().changelevel("Main Menu")
+
+
+func _on_next_pressed():
+	play_click2()
+	get_parent().get_parent().get_parent().get_node("Camera2D").position.x = get_parent().get_parent().get_parent().get_node("Camera2D").position.x + 2048 
+
+
+
+func _on_prev_pressed():
+	play_click2()
+	get_parent().get_parent().get_parent().get_node("Camera2D").position.x = get_parent().get_parent().get_parent().get_node("Camera2D").position.x - 2048 

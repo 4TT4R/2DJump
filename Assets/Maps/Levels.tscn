@@ -34,57 +34,812 @@ font_data = ExtResource( 3 )
 script = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 955, 547 )
+position = Vector2( 1024, 600 )
 current = true
-zoom = Vector2( 2, 2 )
+zoom = Vector2( 2, 2.5 )
 limit_smoothed = true
 smoothing_enabled = true
 script = ExtResource( 2 )
-def_zoom = Vector2( 2, 2 )
+def_zoom = Vector2( 2, 2.5 )
 
-[node name="Level_button" parent="." instance=ExtResource( 1 )]
-position = Vector2( 2, 2 )
+[node name="pg1" type="Node2D" parent="."]
+
+[node name="Level_button" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 128, 32.2 )
 Unlock = true
 Level_Name = "LvL0"
 Gold = "00:13:00"
 Silver = "00:18:00"
 Bronze = "00:20:00"
 
-[node name="Level_button2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 351, -2 )
+[node name="Level_button2" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 512, 32.2 )
 Level_Name = "LvL1"
 Level = "01"
 
-[node name="Level_button3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 723, -3 )
+[node name="Level_button3" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 896, 32.2 )
 Level_Name = "LvL2"
 Level = "02"
 
-[node name="Level_button4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1075, 15 )
+[node name="Level_button4" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 1280, 32.2 )
 Unlock = true
-Level_Name = "LvL5"
-Level = "05"
+Level_Name = "LvL3"
+Level = "03"
 Gold = "00:11:00"
 Silver = "00:15:00"
 Bronze = "00:20:00"
 
-[node name="Level_button5" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1421, 36 )
+[node name="Level_button5" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 1664, 32.2 )
 Unlock = true
 Level_Name = "LvL4"
 Level = "04"
 
-[node name="Buttons" type="Node2D" parent="."]
-position = Vector2( -3977, -1539 )
+[node name="Level_button6" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 128, 323.4 )
+Unlock = true
+Level_Name = "LvL5"
+Level = "05"
 
-[node name="Back" type="Button" parent="Buttons"]
-margin_left = 5667.0
-margin_top = 2595.0
-margin_right = 5830.0
-margin_bottom = 2659.0
+[node name="Level_button11" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 128, 611.6 )
+Unlock = true
+Level_Name = "LvL10"
+Level = "10"
+
+[node name="Level_button16" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 128, 899.8 )
+Unlock = true
+Level_Name = "LvL15"
+Level = "15"
+
+[node name="Level_button7" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 512, 323.4 )
+Unlock = true
+Level_Name = "LvL6"
+Level = "06"
+
+[node name="Level_button12" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 512, 611.6 )
+Unlock = true
+Level_Name = "LvL11"
+Level = "11"
+
+[node name="Level_button17" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 512, 899.8 )
+Unlock = true
+Level_Name = "LvL16"
+Level = "16"
+
+[node name="Level_button8" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 896, 323.4 )
+Unlock = true
+Level_Name = "LvL7"
+Level = "07"
+
+[node name="Level_button13" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 896, 611.6 )
+Unlock = true
+Level_Name = "LvL12"
+Level = "12"
+
+[node name="Level_button18" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 896, 899.8 )
+Unlock = true
+Level_Name = "LvL17"
+Level = "17"
+
+[node name="Level_button9" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 1280, 323.4 )
+Unlock = true
+Level_Name = "LvL8"
+Level = "08"
+
+[node name="Level_button14" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 1280, 611.6 )
+Unlock = true
+Level_Name = "LvL13"
+Level = "13"
+
+[node name="Level_button19" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 1280, 899.8 )
+Unlock = true
+Level_Name = "LvL18"
+Level = "18"
+
+[node name="Level_button10" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 1664, 323.4 )
+Unlock = true
+Level_Name = "LvL9"
+Level = "09"
+
+[node name="Level_button15" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 1664, 611.6 )
+Unlock = true
+Level_Name = "LvL14"
+Level = "14"
+
+[node name="Level_button20" parent="pg1" instance=ExtResource( 1 )]
+position = Vector2( 1664, 899.8 )
+Unlock = true
+Level_Name = "LvL19"
+Level = "19"
+
+[node name="Buttons" type="Node2D" parent="pg1"]
+position = Vector2( 1664, 1188 )
+
+[node name="Back" type="Button" parent="pg1/Buttons"]
+margin_right = 163.0
+margin_bottom = 64.0
 custom_fonts/font = SubResource( 3 )
 text = "Back"
 script = ExtResource( 4 )
 
-[connection signal="pressed" from="Buttons/Back" to="Buttons/Back" method="_on_Back_pressed"]
+[node name="next" type="Button" parent="pg1/Buttons"]
+margin_left = -291.0
+margin_right = -128.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 3 )
+text = "Next"
+script = ExtResource( 4 )
+
+[node name="pg2" type="Node2D" parent="."]
+position = Vector2( 2048, 0 )
+
+[node name="Level_button" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 128, 32.2 )
+Unlock = true
+Level_Name = "LvL20"
+Level = "20"
+Gold = "00:13:00"
+Silver = "00:18:00"
+Bronze = "00:20:00"
+
+[node name="Level_button2" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 512, 32.2 )
+Level_Name = "LvL21"
+Level = "21"
+
+[node name="Level_button3" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 896, 32.2 )
+Level_Name = "LvL22"
+Level = "22"
+
+[node name="Level_button4" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 1280, 32.2 )
+Unlock = true
+Level_Name = "LvL23"
+Level = "23"
+Gold = "00:11:00"
+Silver = "00:15:00"
+Bronze = "00:20:00"
+
+[node name="Level_button5" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 1664, 32.2 )
+Unlock = true
+Level_Name = "LvL24"
+Level = "24"
+
+[node name="Level_button6" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 128, 323.4 )
+Unlock = true
+Level_Name = "LvL25"
+Level = "25"
+
+[node name="Level_button11" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 128, 611.6 )
+Unlock = true
+Level_Name = "LvL30"
+Level = "30"
+
+[node name="Level_button16" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 128, 899.8 )
+Unlock = true
+Level_Name = "LvL35"
+Level = "35"
+
+[node name="Level_button7" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 512, 323.4 )
+Unlock = true
+Level_Name = "LvL26"
+Level = "26"
+
+[node name="Level_button12" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 512, 611.6 )
+Unlock = true
+Level_Name = "LvL31"
+Level = "31"
+
+[node name="Level_button17" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 512, 899.8 )
+Unlock = true
+Level_Name = "LvL36"
+Level = "36"
+
+[node name="Level_button8" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 896, 323.4 )
+Unlock = true
+Level_Name = "LvL27"
+Level = "27"
+
+[node name="Level_button13" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 896, 611.6 )
+Unlock = true
+Level_Name = "LvL32"
+Level = "32"
+
+[node name="Level_button18" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 896, 899.8 )
+Unlock = true
+Level_Name = "LvL37"
+Level = "37"
+
+[node name="Level_button9" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 1280, 323.4 )
+Unlock = true
+Level_Name = "LvL28"
+Level = "28"
+
+[node name="Level_button14" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 1280, 611.6 )
+Unlock = true
+Level_Name = "LvL33"
+Level = "33"
+
+[node name="Level_button19" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 1280, 899.8 )
+Unlock = true
+Level_Name = "LvL38"
+Level = "38"
+
+[node name="Level_button10" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 1664, 323.4 )
+Unlock = true
+Level_Name = "LvL29"
+Level = "29"
+
+[node name="Level_button15" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 1664, 611.6 )
+Unlock = true
+Level_Name = "LvL34"
+Level = "34"
+
+[node name="Level_button20" parent="pg2" instance=ExtResource( 1 )]
+position = Vector2( 1664, 899.8 )
+Unlock = true
+Level_Name = "LvL39"
+Level = "39"
+
+[node name="Buttons2" type="Node2D" parent="pg2"]
+position = Vector2( 1664, 1188 )
+
+[node name="Back" type="Button" parent="pg2/Buttons2"]
+margin_right = 163.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 3 )
+text = "Back"
+script = ExtResource( 4 )
+
+[node name="next" type="Button" parent="pg2/Buttons2"]
+margin_left = -291.0
+margin_right = -128.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 3 )
+text = "Next"
+script = ExtResource( 4 )
+
+[node name="prev" type="Button" parent="pg2/Buttons2"]
+margin_left = -658.0
+margin_right = -419.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 3 )
+text = "Previous"
+script = ExtResource( 4 )
+
+[node name="pg3" type="Node2D" parent="."]
+position = Vector2( 4096, 0 )
+
+[node name="Level_button" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 128, 32.2 )
+Unlock = true
+Level_Name = "LvL40"
+Level = "40"
+Gold = "00:13:00"
+Silver = "00:18:00"
+Bronze = "00:20:00"
+
+[node name="Level_button2" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 512, 32.2 )
+Level_Name = "LvL41"
+Level = "41"
+
+[node name="Level_button3" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 896, 32.2 )
+Level_Name = "LvL42"
+Level = "42"
+
+[node name="Level_button4" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 1280, 32.2 )
+Unlock = true
+Level_Name = "LvL43"
+Level = "43"
+Gold = "00:11:00"
+Silver = "00:15:00"
+Bronze = "00:20:00"
+
+[node name="Level_button5" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 1664, 32.2 )
+Unlock = true
+Level_Name = "LvL44"
+Level = "44"
+
+[node name="Level_button6" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 128, 323.4 )
+Unlock = true
+Level_Name = "LvL45"
+Level = "45"
+
+[node name="Level_button11" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 128, 611.6 )
+Unlock = true
+Level_Name = "LvL50"
+Level = "50"
+
+[node name="Level_button16" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 128, 899.8 )
+Unlock = true
+Level_Name = "LvL55"
+Level = "55"
+
+[node name="Level_button7" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 512, 323.4 )
+Unlock = true
+Level_Name = "LvL46"
+Level = "46"
+
+[node name="Level_button12" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 512, 611.6 )
+Unlock = true
+Level_Name = "LvL51"
+Level = "51"
+
+[node name="Level_button17" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 512, 899.8 )
+Unlock = true
+Level_Name = "LvL56"
+Level = "56"
+
+[node name="Level_button8" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 896, 323.4 )
+Unlock = true
+Level_Name = "LvL47"
+Level = "47"
+
+[node name="Level_button13" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 896, 611.6 )
+Unlock = true
+Level_Name = "LvL52"
+Level = "52"
+
+[node name="Level_button18" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 896, 899.8 )
+Unlock = true
+Level_Name = "LvL57"
+Level = "57"
+
+[node name="Level_button9" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 1280, 323.4 )
+Unlock = true
+Level_Name = "LvL48"
+Level = "48"
+
+[node name="Level_button14" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 1280, 611.6 )
+Unlock = true
+Level_Name = "LvL53"
+Level = "53"
+
+[node name="Level_button19" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 1280, 899.8 )
+Unlock = true
+Level_Name = "LvL58"
+Level = "58"
+
+[node name="Level_button10" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 1664, 323.4 )
+Unlock = true
+Level_Name = "LvL49"
+Level = "49"
+
+[node name="Level_button15" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 1664, 611.6 )
+Unlock = true
+Level_Name = "LvL54"
+Level = "54"
+
+[node name="Level_button20" parent="pg3" instance=ExtResource( 1 )]
+position = Vector2( 1664, 899.8 )
+Unlock = true
+Level_Name = "LvL59"
+Level = "59"
+
+[node name="Buttons3" type="Node2D" parent="pg3"]
+position = Vector2( 1664, 1188 )
+
+[node name="Back" type="Button" parent="pg3/Buttons3"]
+margin_right = 163.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 3 )
+text = "Back"
+script = ExtResource( 4 )
+
+[node name="next" type="Button" parent="pg3/Buttons3"]
+margin_left = -291.0
+margin_right = -128.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 3 )
+text = "Next"
+script = ExtResource( 4 )
+
+[node name="prev" type="Button" parent="pg3/Buttons3"]
+margin_left = -658.0
+margin_right = -419.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 3 )
+text = "Previous"
+script = ExtResource( 4 )
+
+[node name="pg4" type="Node2D" parent="."]
+position = Vector2( 6144, 0 )
+
+[node name="Level_button" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 128, 32.2 )
+Unlock = true
+Level_Name = "LvL60"
+Level = "60"
+Gold = "00:13:00"
+Silver = "00:18:00"
+Bronze = "00:20:00"
+
+[node name="Level_button2" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 512, 32.2 )
+Level_Name = "LvL61"
+Level = "61"
+
+[node name="Level_button3" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 896, 32.2 )
+Level_Name = "LvL62"
+Level = "62"
+
+[node name="Level_button4" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 1280, 32.2 )
+Unlock = true
+Level_Name = "LvL63"
+Level = "63"
+Gold = "00:11:00"
+Silver = "00:15:00"
+Bronze = "00:20:00"
+
+[node name="Level_button5" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 1664, 32.2 )
+Unlock = true
+Level_Name = "LvL64"
+Level = "64"
+
+[node name="Level_button6" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 128, 323.4 )
+Unlock = true
+Level_Name = "LvL65"
+Level = "65"
+
+[node name="Level_button11" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 128, 611.6 )
+Unlock = true
+Level_Name = "LvL70"
+Level = "70"
+
+[node name="Level_button16" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 128, 899.8 )
+Unlock = true
+Level_Name = "LvL75"
+Level = "75"
+
+[node name="Level_button7" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 512, 323.4 )
+Unlock = true
+Level_Name = "LvL66"
+Level = "66"
+
+[node name="Level_button12" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 512, 611.6 )
+Unlock = true
+Level_Name = "LvL71"
+Level = "71"
+
+[node name="Level_button17" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 512, 899.8 )
+Unlock = true
+Level_Name = "LvL76"
+Level = "76"
+
+[node name="Level_button8" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 896, 323.4 )
+Unlock = true
+Level_Name = "LvL67"
+Level = "67"
+
+[node name="Level_button13" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 896, 611.6 )
+Unlock = true
+Level_Name = "LvL72"
+Level = "72"
+
+[node name="Level_button18" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 896, 899.8 )
+Unlock = true
+Level_Name = "LvL77"
+Level = "77"
+
+[node name="Level_button9" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 1280, 323.4 )
+Unlock = true
+Level_Name = "LvL68"
+Level = "68"
+
+[node name="Level_button14" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 1280, 611.6 )
+Unlock = true
+Level_Name = "LvL73"
+Level = "73"
+
+[node name="Level_button19" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 1280, 899.8 )
+Unlock = true
+Level_Name = "LvL78"
+Level = "78"
+
+[node name="Level_button10" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 1664, 323.4 )
+Unlock = true
+Level_Name = "LvL69"
+Level = "69"
+
+[node name="Level_button15" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 1664, 611.6 )
+Unlock = true
+Level_Name = "LvL74"
+Level = "74"
+
+[node name="Level_button20" parent="pg4" instance=ExtResource( 1 )]
+position = Vector2( 1664, 899.8 )
+Unlock = true
+Level_Name = "LvL79"
+Level = "79"
+
+[node name="Buttons4" type="Node2D" parent="pg4"]
+position = Vector2( 1664, 1188 )
+
+[node name="Back" type="Button" parent="pg4/Buttons4"]
+margin_right = 163.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 3 )
+text = "Back"
+script = ExtResource( 4 )
+
+[node name="next" type="Button" parent="pg4/Buttons4"]
+margin_left = -291.0
+margin_right = -128.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 3 )
+text = "Next"
+script = ExtResource( 4 )
+
+[node name="prev" type="Button" parent="pg4/Buttons4"]
+margin_left = -658.0
+margin_right = -419.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 3 )
+text = "Previous"
+script = ExtResource( 4 )
+
+[node name="pg5" type="Node2D" parent="."]
+position = Vector2( 8192, 0 )
+
+[node name="Level_button" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 128, 32.2 )
+Unlock = true
+Level_Name = "LvL80"
+Level = "80"
+Gold = "00:13:00"
+Silver = "00:18:00"
+Bronze = "00:20:00"
+
+[node name="Level_button2" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 512, 32.2 )
+Level_Name = "LvL81"
+Level = "81"
+
+[node name="Level_button3" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 896, 32.2 )
+Level_Name = "LvL82"
+Level = "82"
+
+[node name="Level_button4" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 1280, 32.2 )
+Unlock = true
+Level_Name = "LvL83"
+Level = "83"
+Gold = "00:11:00"
+Silver = "00:15:00"
+Bronze = "00:20:00"
+
+[node name="Level_button5" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 1664, 32.2 )
+Unlock = true
+Level_Name = "LvL84"
+Level = "84"
+
+[node name="Level_button6" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 128, 323.4 )
+Unlock = true
+Level_Name = "LvL85"
+Level = "85"
+
+[node name="Level_button11" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 128, 611.6 )
+Unlock = true
+Level_Name = "LvL90"
+Level = "90"
+
+[node name="Level_button16" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 128, 899.8 )
+Unlock = true
+Level_Name = "LvL95"
+Level = "95"
+
+[node name="Level_button7" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 512, 323.4 )
+Unlock = true
+Level_Name = "LvL86"
+Level = "86"
+
+[node name="Level_button12" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 512, 611.6 )
+Unlock = true
+Level_Name = "LvL91"
+Level = "91"
+
+[node name="Level_button17" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 512, 899.8 )
+Unlock = true
+Level_Name = "LvL96"
+Level = "96"
+
+[node name="Level_button8" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 896, 323.4 )
+Unlock = true
+Level_Name = "LvL87"
+Level = "87"
+
+[node name="Level_button13" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 896, 611.6 )
+Unlock = true
+Level_Name = "LvL92"
+Level = "92"
+
+[node name="Level_button18" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 896, 899.8 )
+Unlock = true
+Level_Name = "LvL97"
+Level = "97"
+
+[node name="Level_button9" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 1280, 323.4 )
+Unlock = true
+Level_Name = "LvL88"
+Level = "88"
+
+[node name="Level_button14" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 1280, 611.6 )
+Unlock = true
+Level_Name = "LvL93"
+Level = "93"
+
+[node name="Level_button19" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 1280, 899.8 )
+Unlock = true
+Level_Name = "LvL98"
+Level = "98"
+
+[node name="Level_button10" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 1664, 323.4 )
+Unlock = true
+Level_Name = "LvL89"
+Level = "89"
+
+[node name="Level_button15" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 1664, 611.6 )
+Unlock = true
+Level_Name = "LvL94"
+Level = "94"
+
+[node name="Level_button20" parent="pg5" instance=ExtResource( 1 )]
+position = Vector2( 1664, 899.8 )
+Unlock = true
+Level_Name = "LvL99"
+Level = "99"
+
+[node name="Buttons5" type="Node2D" parent="pg5"]
+position = Vector2( 1664, 1188 )
+
+[node name="Back" type="Button" parent="pg5/Buttons5"]
+margin_right = 163.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 3 )
+text = "Back"
+script = ExtResource( 4 )
+
+[node name="next" type="Button" parent="pg5/Buttons5"]
+margin_left = -291.0
+margin_right = -128.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 3 )
+text = "Next"
+script = ExtResource( 4 )
+
+[node name="prev" type="Button" parent="pg5/Buttons5"]
+margin_left = -658.0
+margin_right = -419.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 3 )
+text = "Previous"
+script = ExtResource( 4 )
+
+[node name="pg6" type="Node2D" parent="."]
+position = Vector2( 10240, 0 )
+
+[node name="Level_button" parent="pg6" instance=ExtResource( 1 )]
+position = Vector2( 128, 32.2 )
+Unlock = true
+Level_Name = "LvL100"
+Level = "100"
+Gold = "00:13:00"
+Silver = "00:18:00"
+Bronze = "00:20:00"
+
+[node name="Buttons6" type="Node2D" parent="pg6"]
+position = Vector2( 1664, 1188 )
+
+[node name="Back" type="Button" parent="pg6/Buttons6"]
+margin_right = 163.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 3 )
+text = "Back"
+script = ExtResource( 4 )
+
+[node name="prev" type="Button" parent="pg6/Buttons6"]
+margin_left = -658.0
+margin_right = -419.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 3 )
+text = "Previous"
+script = ExtResource( 4 )
+
+[connection signal="pressed" from="pg1/Buttons/Back" to="pg1/Buttons/Back" method="_on_Back_pressed"]
+[connection signal="pressed" from="pg1/Buttons/next" to="pg1/Buttons/next" method="_on_next_pressed"]
+[connection signal="pressed" from="pg2/Buttons2/Back" to="pg2/Buttons2/Back" method="_on_Back_pressed"]
+[connection signal="pressed" from="pg2/Buttons2/next" to="pg2/Buttons2/next" method="_on_next_pressed"]
+[connection signal="pressed" from="pg2/Buttons2/prev" to="pg2/Buttons2/prev" method="_on_prev_pressed"]
+[connection signal="pressed" from="pg3/Buttons3/Back" to="pg3/Buttons3/Back" method="_on_Back_pressed"]
+[connection signal="pressed" from="pg3/Buttons3/next" to="pg3/Buttons3/next" method="_on_next_pressed"]
+[connection signal="pressed" from="pg3/Buttons3/prev" to="pg3/Buttons3/prev" method="_on_prev_pressed"]
+[connection signal="pressed" from="pg4/Buttons4/Back" to="pg4/Buttons4/Back" method="_on_Back_pressed"]
+[connection signal="pressed" from="pg4/Buttons4/next" to="pg4/Buttons4/next" method="_on_next_pressed"]
+[connection signal="pressed" from="pg4/Buttons4/prev" to="pg4/Buttons4/prev" method="_on_prev_pressed"]
+[connection signal="pressed" from="pg5/Buttons5/Back" to="pg5/Buttons5/Back" method="_on_Back_pressed"]
+[connection signal="pressed" from="pg5/Buttons5/next" to="pg5/Buttons5/next" method="_on_next_pressed"]
+[connection signal="pressed" from="pg5/Buttons5/prev" to="pg5/Buttons5/prev" method="_on_prev_pressed"]
+[connection signal="pressed" from="pg6/Buttons6/Back" to="pg6/Buttons6/Back" method="_on_Back_pressed"]
+[connection signal="pressed" from="pg6/Buttons6/prev" to="pg6/Buttons6/prev" method="_on_prev_pressed"]

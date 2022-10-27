@@ -26,20 +26,20 @@ var locked = Color("212121")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var key = "LvL"+Level
-	if get_parent().get_parent().get_node("Save").unlocked_levels.has(key) && !Unlock:
-		Unlock = get_parent().get_parent().get_node("Save").unlocked_levels[key]
+	if get_parent().get_parent().get_parent().get_node("Save").unlocked_levels.has(key) && !Unlock:
+		Unlock = get_parent().get_parent().get_parent().get_node("Save").unlocked_levels[key]
 	else:
-		get_parent().get_parent().get_node("Save").unlocked_levels[key] = Unlock
+		get_parent().get_parent().get_parent().get_node("Save").unlocked_levels[key] = Unlock
 	
-	if get_parent().get_parent().get_node("Save").levels_colatable.has(key):
-		colactable = get_parent().get_parent().get_node("Save").levels_colatable[key]
+	if get_parent().get_parent().get_parent().get_node("Save").levels_colatable.has(key):
+		colactable = get_parent().get_parent().get_parent().get_node("Save").levels_colatable[key]
 	else:
-		get_parent().get_parent().get_node("Save").levels_colatable[key] = colactable
+		get_parent().get_parent().get_parent().get_node("Save").levels_colatable[key] = colactable
 	
-	if get_parent().get_parent().get_node("Save").levels_time.has(key):
-		time = get_parent().get_parent().get_node("Save").levels_time[key]
+	if get_parent().get_parent().get_parent().get_node("Save").levels_time.has(key):
+		time = get_parent().get_parent().get_parent().get_node("Save").levels_time[key]
 	else:
-		get_parent().get_parent().get_node("Save").levels_time[key] = time
+		get_parent().get_parent().get_parent().get_node("Save").levels_time[key] = time
 	get_node("Button").text = Level
 	if Unlock:
 		get_node("Locked").visible = false
@@ -81,7 +81,7 @@ func _ready():
 
 func _on_Button_pressed():
 	if Unlock:
-		get_parent().get_parent().get_node("click").play(0)
-		get_parent().get_parent().changelevel(Level_Name)
+		get_parent().get_parent().get_parent().get_node("click").play(0)
+		get_parent().get_parent().get_parent().changelevel(Level_Name)
 
 
