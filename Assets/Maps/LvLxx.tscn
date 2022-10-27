@@ -37,6 +37,7 @@ position = Vector2( 612, 8707 )
 BOUNDS_MAX = Vector2( 20000, 11826 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
 zoom = Vector2( 5, 5 )
 script = ExtResource( 2 )
 
