@@ -25,6 +25,7 @@ var bronze = Color("cd7f32")
 var locked = Color("212121")
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	medail = 0
 	var key = "LvL"+Level
 	if get_parent().get_parent().get_parent().get_node("Save").unlocked_levels.has(key) && !Unlock:
 		Unlock = get_parent().get_parent().get_parent().get_node("Save").unlocked_levels[key]
@@ -57,12 +58,14 @@ func _ready():
 		var Silver_arr = Silver.split(":")
 		var Bronze_arr = Bronze.split(":")
 		
-		if (int(Gold_arr[0])*3600 + int(Gold_arr[1])*60 + int(Gold_arr[2]) >= int(time_arr[0])*3600 + int(time_arr[1]) * 60 + int(time_arr[2])):
+		if (float(Gold_arr[0])*3600 + float(Gold_arr[1])*60 + float(Gold_arr[2]) >= float(time_arr[0])*3600 + float(time_arr[1]) * 60 + float(time_arr[2])):
+			
 			medail = 3
-		elif (int(Silver_arr[0])*3600 + int(Silver_arr[1])*60 + int(Silver_arr[2]) >= int(time_arr[0])*3600 + int(time_arr[1]) * 60 + int(time_arr[2])):
+		elif (float(Silver_arr[0])*3600 + float(Silver_arr[1])*60 + float(Silver_arr[2]) >= float(time_arr[0])*3600 + float(time_arr[1]) * 60 + float(time_arr[2])):
 			medail = 2
-		elif (int(Bronze_arr[0])*3600 + int(Bronze_arr[1])*60 + int(Bronze_arr[2]) >= int(time_arr[0])*3600 + int(time_arr[1]) * 60 + int(time_arr[2])):
+		elif (float(Bronze_arr[0])*3600 + float(Bronze_arr[1])*60 + float(Bronze_arr[2]) >= float(time_arr[0])*3600 + float(time_arr[1]) * 60 + float(time_arr[2])):
 			medail = 1
+		
 	if medail >= 1:
 		get_node("Medails/Bronze").modulate = bronze
 	if medail >= 2:

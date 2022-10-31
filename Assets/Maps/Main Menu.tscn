@@ -36,33 +36,43 @@ tile_data = PoolIntArray( -65557, 18, 0, -65555, 17, 0, 196581, 22, 0, 196583, 2
 [node name="Buttons" type="Node2D" parent="."]
 position = Vector2( -3977, -1539 )
 
-[node name="Levels" type="Button" parent="Buttons"]
+[node name="Load" type="Button" parent="Buttons"]
 margin_left = 2176.0
-margin_top = 768.0
+margin_top = 395.2
 margin_right = 2953.0
-margin_bottom = 1024.0
+margin_bottom = 651.2
 custom_fonts/font = SubResource( 1 )
-text = "Levels"
+text = "Load"
+script = ExtResource( 18 )
+
+[node name="New Game" type="Button" parent="Buttons"]
+margin_left = 2176.0
+margin_top = 1046.4
+margin_right = 2953.0
+margin_bottom = 1302.4
+custom_fonts/font = SubResource( 1 )
+text = "New Game"
 script = ExtResource( 18 )
 
 [node name="Credits" type="Button" parent="Buttons"]
 margin_left = 2176.0
-margin_top = 1408.0
+margin_top = 1697.6
 margin_right = 2953.0
-margin_bottom = 1664.0
+margin_bottom = 1953.6
 custom_fonts/font = SubResource( 1 )
 text = "Credits"
 script = ExtResource( 18 )
 
 [node name="Exit" type="Button" parent="Buttons"]
 margin_left = 2176.0
-margin_top = 2048.0
+margin_top = 2348.8
 margin_right = 2953.0
-margin_bottom = 2304.0
+margin_bottom = 2604.8
 custom_fonts/font = SubResource( 1 )
 text = "Exit"
 script = ExtResource( 18 )
 
-[connection signal="pressed" from="Buttons/Levels" to="Buttons/Levels" method="_on_Levels_pressed"]
+[connection signal="pressed" from="Buttons/Load" to="Buttons/Load" method="_on_Levels_pressed"]
+[connection signal="pressed" from="Buttons/New Game" to="Buttons/New Game" method="_on_New_Game_pressed"]
 [connection signal="pressed" from="Buttons/Credits" to="Buttons/Credits" method="_on_Credits_pressed"]
 [connection signal="pressed" from="Buttons/Exit" to="Buttons/Exit" method="_on_Exit_pressed"]

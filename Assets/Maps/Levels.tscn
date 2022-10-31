@@ -48,17 +48,19 @@ def_zoom = Vector2( 2, 2.5 )
 position = Vector2( 128, 32.2 )
 Unlock = true
 Level_Name = "LvL0"
-Gold = "00:13:00"
-Silver = "00:18:00"
-Bronze = "00:20:00"
+Gold = "00:00:13"
+Silver = "00:00:18"
+Bronze = "00:00:20"
 
 [node name="Level_button2" parent="pg1" instance=ExtResource( 1 )]
 position = Vector2( 512, 32.2 )
+Unlock = true
 Level_Name = "LvL1"
 Level = "01"
 
 [node name="Level_button3" parent="pg1" instance=ExtResource( 1 )]
 position = Vector2( 896, 32.2 )
+Unlock = true
 Level_Name = "LvL2"
 Level = "02"
 
@@ -170,7 +172,7 @@ Level = "19"
 [node name="Buttons" type="Node2D" parent="pg1"]
 position = Vector2( 1664, 1188 )
 
-[node name="Back" type="Button" parent="pg1/Buttons"]
+[node name="Back2" type="Button" parent="pg1/Buttons"]
 margin_right = 163.0
 margin_bottom = 64.0
 custom_fonts/font = SubResource( 3 )
@@ -199,11 +201,13 @@ Bronze = "00:20:00"
 
 [node name="Level_button2" parent="pg2" instance=ExtResource( 1 )]
 position = Vector2( 512, 32.2 )
+Unlock = true
 Level_Name = "LvL21"
 Level = "21"
 
 [node name="Level_button3" parent="pg2" instance=ExtResource( 1 )]
 position = Vector2( 896, 32.2 )
+Unlock = true
 Level_Name = "LvL22"
 Level = "22"
 
@@ -315,7 +319,7 @@ Level = "39"
 [node name="Buttons2" type="Node2D" parent="pg2"]
 position = Vector2( 1664, 1188 )
 
-[node name="Back" type="Button" parent="pg2/Buttons2"]
+[node name="Back2" type="Button" parent="pg2/Buttons2"]
 margin_right = 163.0
 margin_bottom = 64.0
 custom_fonts/font = SubResource( 3 )
@@ -352,11 +356,13 @@ Bronze = "00:20:00"
 
 [node name="Level_button2" parent="pg3" instance=ExtResource( 1 )]
 position = Vector2( 512, 32.2 )
+Unlock = true
 Level_Name = "LvL41"
 Level = "41"
 
 [node name="Level_button3" parent="pg3" instance=ExtResource( 1 )]
 position = Vector2( 896, 32.2 )
+Unlock = true
 Level_Name = "LvL42"
 Level = "42"
 
@@ -468,7 +474,7 @@ Level = "59"
 [node name="Buttons3" type="Node2D" parent="pg3"]
 position = Vector2( 1664, 1188 )
 
-[node name="Back" type="Button" parent="pg3/Buttons3"]
+[node name="Back2" type="Button" parent="pg3/Buttons3"]
 margin_right = 163.0
 margin_bottom = 64.0
 custom_fonts/font = SubResource( 3 )
@@ -505,11 +511,13 @@ Bronze = "00:20:00"
 
 [node name="Level_button2" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 512, 32.2 )
+Unlock = true
 Level_Name = "LvL61"
 Level = "61"
 
 [node name="Level_button3" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 896, 32.2 )
+Unlock = true
 Level_Name = "LvL62"
 Level = "62"
 
@@ -621,7 +629,7 @@ Level = "79"
 [node name="Buttons4" type="Node2D" parent="pg4"]
 position = Vector2( 1664, 1188 )
 
-[node name="Back" type="Button" parent="pg4/Buttons4"]
+[node name="Back2" type="Button" parent="pg4/Buttons4"]
 margin_right = 163.0
 margin_bottom = 64.0
 custom_fonts/font = SubResource( 3 )
@@ -658,11 +666,13 @@ Bronze = "00:20:00"
 
 [node name="Level_button2" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 512, 32.2 )
+Unlock = true
 Level_Name = "LvL81"
 Level = "81"
 
 [node name="Level_button3" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 896, 32.2 )
+Unlock = true
 Level_Name = "LvL82"
 Level = "82"
 
@@ -774,7 +784,7 @@ Level = "99"
 [node name="Buttons5" type="Node2D" parent="pg5"]
 position = Vector2( 1664, 1188 )
 
-[node name="Back" type="Button" parent="pg5/Buttons5"]
+[node name="Back2" type="Button" parent="pg5/Buttons5"]
 margin_right = 163.0
 margin_bottom = 64.0
 custom_fonts/font = SubResource( 3 )
@@ -812,7 +822,7 @@ Bronze = "00:20:00"
 [node name="Buttons6" type="Node2D" parent="pg6"]
 position = Vector2( 1664, 1188 )
 
-[node name="Back" type="Button" parent="pg6/Buttons6"]
+[node name="Back2" type="Button" parent="pg6/Buttons6"]
 margin_right = 163.0
 margin_bottom = 64.0
 custom_fonts/font = SubResource( 3 )
@@ -827,19 +837,19 @@ custom_fonts/font = SubResource( 3 )
 text = "Previous"
 script = ExtResource( 4 )
 
-[connection signal="pressed" from="pg1/Buttons/Back" to="pg1/Buttons/Back" method="_on_Back_pressed"]
+[connection signal="pressed" from="pg1/Buttons/Back2" to="pg1/Buttons/Back2" method="_on_Back2_pressed"]
 [connection signal="pressed" from="pg1/Buttons/next" to="pg1/Buttons/next" method="_on_next_pressed"]
-[connection signal="pressed" from="pg2/Buttons2/Back" to="pg2/Buttons2/Back" method="_on_Back_pressed"]
+[connection signal="pressed" from="pg2/Buttons2/Back2" to="pg2/Buttons2/Back2" method="_on_Back2_pressed"]
 [connection signal="pressed" from="pg2/Buttons2/next" to="pg2/Buttons2/next" method="_on_next_pressed"]
 [connection signal="pressed" from="pg2/Buttons2/prev" to="pg2/Buttons2/prev" method="_on_prev_pressed"]
-[connection signal="pressed" from="pg3/Buttons3/Back" to="pg3/Buttons3/Back" method="_on_Back_pressed"]
+[connection signal="pressed" from="pg3/Buttons3/Back2" to="pg3/Buttons3/Back2" method="_on_Back2_pressed"]
 [connection signal="pressed" from="pg3/Buttons3/next" to="pg3/Buttons3/next" method="_on_next_pressed"]
 [connection signal="pressed" from="pg3/Buttons3/prev" to="pg3/Buttons3/prev" method="_on_prev_pressed"]
-[connection signal="pressed" from="pg4/Buttons4/Back" to="pg4/Buttons4/Back" method="_on_Back_pressed"]
+[connection signal="pressed" from="pg4/Buttons4/Back2" to="pg4/Buttons4/Back2" method="_on_Back2_pressed"]
 [connection signal="pressed" from="pg4/Buttons4/next" to="pg4/Buttons4/next" method="_on_next_pressed"]
 [connection signal="pressed" from="pg4/Buttons4/prev" to="pg4/Buttons4/prev" method="_on_prev_pressed"]
-[connection signal="pressed" from="pg5/Buttons5/Back" to="pg5/Buttons5/Back" method="_on_Back_pressed"]
+[connection signal="pressed" from="pg5/Buttons5/Back2" to="pg5/Buttons5/Back2" method="_on_Back2_pressed"]
 [connection signal="pressed" from="pg5/Buttons5/next" to="pg5/Buttons5/next" method="_on_next_pressed"]
 [connection signal="pressed" from="pg5/Buttons5/prev" to="pg5/Buttons5/prev" method="_on_prev_pressed"]
-[connection signal="pressed" from="pg6/Buttons6/Back" to="pg6/Buttons6/Back" method="_on_Back_pressed"]
+[connection signal="pressed" from="pg6/Buttons6/Back2" to="pg6/Buttons6/Back2" method="_on_Back2_pressed"]
 [connection signal="pressed" from="pg6/Buttons6/prev" to="pg6/Buttons6/prev" method="_on_prev_pressed"]

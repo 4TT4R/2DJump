@@ -37,6 +37,7 @@ func _on_Main_Menu_pressed():
 
 func _on_Levels_pressed():
 	play_click()
+	get_parent().get_parent().get_parent().get_node("Save").loadT()
 	get_parent().get_parent().get_parent().changelevel("Levels")
 	
 
@@ -52,12 +53,13 @@ func play_click2():
 
 func _on_Settings_pressed():
 	play_click()
+	
 	get_parent().get_parent().get_parent().changelevel("Settings")
 
 
 func _on_Back_pressed():
-	play_click2()
-	get_parent().get_parent().get_parent().get_parent().changelevel("Main Menu")
+	play_click()
+	get_parent().get_parent().get_parent().changelevel("Main Menu")
 
 
 func _on_next_pressed():
@@ -69,3 +71,15 @@ func _on_next_pressed():
 func _on_prev_pressed():
 	play_click2()
 	get_parent().get_parent().get_parent().get_node("Camera2D").position.x = get_parent().get_parent().get_parent().get_node("Camera2D").position.x - 2048 
+
+
+func _on_Back2_pressed():
+	play_click2()
+	get_parent().get_parent().get_parent().get_parent().changelevel("Main Menu")
+
+
+func _on_New_Game_pressed():
+	play_click()
+	get_parent().get_parent().get_parent().get_node("Save").reset()
+	get_parent().get_parent().get_parent().changelevel("Levels")
+

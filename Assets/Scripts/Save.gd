@@ -9,13 +9,16 @@ extends Node
 class_name Save
 const FILE_NAME = "user://game-data.data"
 var unlocked_levels = {"LvL00":true}
-var levels_colatable = {"LvL00":false, "LvL01":false, "LvL02":false}
+var levels_colatable = {"LvL00":false}
 var levels_time = {"LvL00":"--:--:--"}
+const UNLOCKED_LEVELS_DEF = {"LvL00":true}
+const LEVELS_COLATABLE_DEF = {"LvL00":false}
+const LEVELS_TIME_DEF = {"LvL00":"--:--:--"}
 const DEFAULT_TIME = "--:--:--"
 var game_data
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	loadT()
+	pass
 func save(key, next_level, colectable, time):
 	unlocked_levels[next_level] = true
 	if colectable:
@@ -37,11 +40,15 @@ func save(key, next_level, colectable, time):
 		levels_time[key] = time
 	saveT()
 func reset():
+	unlocked_levels = UNLOCKED_LEVELS_DEF
+	levels_colatable = LEVELS_COLATABLE_DEF
+	levels_time = LEVELS_TIME_DEF
 	game_data = {
-		"unlocked_levels" : unlocked_levels,
-		"levels_colatable" : levels_colatable,
-		"levels_time" : levels_time
+		"unlocked_levels" : UNLOCKED_LEVELS_DEF,
+		"levels_colatable" : LEVELS_COLATABLE_DEF,
+		"levels_time" : LEVELS_TIME_DEF
 	}
+	saveT()
 
 
 func saveT():
