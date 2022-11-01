@@ -1,11 +1,10 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://Assets/UI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Objects/Entities/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=5]
-[ext_resource path="res://Assets/Scripts/Door.gd" type="Script" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=9]
@@ -55,16 +54,10 @@ theme = SubResource( 8 )
 [node name="UI" parent="Player/Camera2D" instance=ExtResource( 3 )]
 position = Vector2( 27, 13 )
 
-[node name="Door" type="Area2D" parent="." instance=ExtResource( 9 )]
+[node name="Door" parent="." instance=ExtResource( 9 )]
 position = Vector2( 16327, 8843 )
-collision_layer = 2
-collision_mask = 2
-script = ExtResource( 6 )
-next_level = "LvL02"
-level = "LvL01"
+next_level = "LvL49"
+level = "LvL48"
 
-[node name="Collect" type="Node2D" parent="." instance=ExtResource( 8 )]
+[node name="Collect" parent="." instance=ExtResource( 8 )]
 position = Vector2( 14877, 8358 )
-
-[connection signal="area_entered" from="Door" to="Door" method="_on_door_area_entered"]
-[connection signal="area_exited" from="Door" to="Door" method="_on_door_area_exited"]

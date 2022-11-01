@@ -10,6 +10,7 @@ var screensize = OS.get_real_window_size()
 var size = Vector2.ZERO
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	
 	size = Vector2(1024*def_zoom.x, 600* def_zoom.y)
 	zoom.x = size.x/screensize.x
 	zoom.y = size.y/screensize.y

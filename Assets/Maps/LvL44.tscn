@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Assets/Scripts/Door.gd" type="Script" id=9]
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -56,16 +55,10 @@ theme = SubResource( 8 )
 [node name="UI" parent="Player/Camera2D" instance=ExtResource( 3 )]
 position = Vector2( 27, 13 )
 
-[node name="Door" type="Area2D" parent="." instance=ExtResource( 6 )]
+[node name="Door" parent="." instance=ExtResource( 6 )]
 position = Vector2( 12745, 10237 )
-collision_layer = 2
-collision_mask = 2
-script = ExtResource( 9 )
-next_level = "LvL02"
-level = "LvL01"
+next_level = "LvL45"
+level = "LvL44"
 
-[node name="Collect" type="Node2D" parent="." instance=ExtResource( 8 )]
+[node name="Collect" parent="." instance=ExtResource( 8 )]
 position = Vector2( 8857, 8792 )
-
-[connection signal="area_entered" from="Door" to="Door" method="_on_door_area_entered"]
-[connection signal="area_exited" from="Door" to="Door" method="_on_door_area_exited"]

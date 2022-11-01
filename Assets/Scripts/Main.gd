@@ -17,6 +17,7 @@ var SFX = 1
 var paused = false
 var Music = 100
 export var is_pc = false
+var cam_pos = Vector2(0,0)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$click.volume_db = SFX
@@ -40,7 +41,8 @@ func changelevel2(level, key, colatable):
 	current_scene = load("res://Assets/Maps/"+level+".tscn").instance()
 	current_scene_path = "res://Assets/Maps/"+level+".tscn"
 	add_child(current_scene)
-
+	if current_scene_path == "res://Assets/Maps/Levels.tscn":
+		get_node("Levels/Camera2D").position = cam_pos
 func die():
 	remove_child(current_scene)
 	current_scene = load(current_scene_path).instance()
@@ -51,6 +53,8 @@ func restart():
 	current_scene = load(current_scene_path).instance()
 	add_child(current_scene)
 	seconds = 0
+	minuts = 0
+	hours = 0
 # Called every frame. 'delta' is the seconds time since the previous frame.
 func _process(delta):
 	if !paused:

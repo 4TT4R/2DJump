@@ -1,11 +1,10 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://Assets/UI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Objects/Entities/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=5]
-[ext_resource path="res://Assets/Scripts/Door.gd" type="Script" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=9]
@@ -53,16 +52,10 @@ cell_size = Vector2( 128, 128 )
 format = 1
 tile_data = PoolIntArray( 3473419, 0, 0, 3473420, 0, 0, 3538973, -1073741800, 0, 3670045, -1073741801, 0, 3801117, -1073741801, 0, 3801167, -1073741800, 0, 3932189, -1073741801, 0, 3932239, -1073741801, 0, 4063261, -1073741801, 0, 4063311, -1073741801, 0, 4194333, -1073741801, 0, 4194383, -1073741801, 0, 4325405, -1073741801, 0, 4325455, -1073741801, 0, 4456477, -1073741802, 0, 4456527, -1073741801, 0, 4587522, 22, 0, 4587524, 23, 0, 4587526, 23, 0, 4587528, 24, 0, 4587533, 22, 0, 4587535, 23, 0, 4587537, 23, 0, 4587539, 23, 0, 4587541, 23, 0, 4587543, 23, 0, 4587545, 23, 0, 4587547, 24, 0, 4587599, -1073741801, 0, 4718671, -1073741802, 0, 4849702, 0, 0, 4849708, 22, 0, 4849710, 12, 0, 4849712, 12, 0, 4849714, 12, 0, 4849716, 12, 0, 4849718, 12, 0, 4849720, 12, 0, 4849722, 24, 0, 4849727, 22, 0, 4849729, 23, 0, 4849731, 23, 0, 4849733, 23, 0, 4849735, 23, 0, 4849737, 23, 0, 4849739, 23, 0, 4849741, 24, 0, 5046308, 0, 0, 5242906, 0, 0, 5242910, 0, 0, 5242914, 0, 0, 5439496, 0, 0, 5439501, 0, 0, 5439507, 0, 0, 5439512, 0, 0, 5570618, 0, 0, 5570625, 22, 0, 5570627, 12, 0, 5570629, 12, 0, 5570631, 12, 0, 5570633, 12, 0, 5570635, 24, 0, 5570644, 22, 0, 5570646, 12, 0, 5570648, 12, 0, 5570650, 12, 0, 5570652, 12, 0, 5570654, 24, 0, 5570662, 22, 0, 5570664, 12, 0, 5570666, 12, 0, 5570668, 12, 0, 5570670, 12, 0, 5570672, 24, 0 )
 
-[node name="Door" type="Area2D" parent="." instance=ExtResource( 8 )]
+[node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 14452, 10641 )
-collision_layer = 2
-collision_mask = 2
-script = ExtResource( 6 )
-next_level = "LvL80"
-level = "LvL81 "
+next_level = "LvL81"
+level = "LvL80"
 
-[node name="Collect" type="Node2D" parent="." instance=ExtResource( 9 )]
+[node name="Collect" parent="." instance=ExtResource( 9 )]
 position = Vector2( 9942, 8615 )
-
-[connection signal="area_entered" from="Door" to="Door" method="_on_door_area_entered"]
-[connection signal="area_exited" from="Door" to="Door" method="_on_door_area_exited"]

@@ -1,11 +1,10 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://Assets/UI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Objects/Entities/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=5]
-[ext_resource path="res://Assets/Scripts/Door.gd" type="Script" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=9]
@@ -51,18 +50,12 @@ tile_data = PoolIntArray( -458874, 3, 0, -458873, 5, 0, -458872, 3, 0, -458871, 
 tile_set = ExtResource( 5 )
 cell_size = Vector2( 128, 128 )
 format = 1
-tile_data = PoolIntArray( 3539035, -1073741800, 0, 3670041, -1073741800, 0, 3670107, -1073741801, 0, 3801113, -1073741801, 0, 3801179, -1073741801, 0, 3932185, -1073741801, 0, 3932251, -1073741801, 0, 4063257, -1073741801, 0, 4063323, -1073741801, 0, 4194329, -1073741801, 0, 4194395, -1073741801, 0, 4325401, -1073741801, 0, 4325467, -1073741802, 0, 4456473, -1073741802, 0, 4456504, 0, 0, 4456510, 22, 0, 4456512, 12, 0, 4456514, 12, 0, 4456516, 12, 0, 4456518, 24, 0, 4456523, 22, 0, 4456525, 23, 0, 4456527, 23, 0, 4456529, 23, 0, 4456531, 23, 0, 4456533, 23, 0, 4456535, 23, 0, 4456537, 24, 0, 4587522, 11, 0, 4587524, 13, 0, 4587529, 22, 0, 4587531, 23, 0, 4587533, 23, 0, 4587535, 23, 0, 4587537, 23, 0, 4587539, 23, 0, 4587541, 23, 0, 4587543, 24, 0, 4587574, 0, 0, 4980786, 0, 0, 5111830, 11, 0, 5111832, 13, 0, 5111838, 0, 0, 5111844, 0, 0, 5111877, 0, 0, 5111883, 0, 0, 5111889, 0, 0, 5111896, 0, 0, 5111902, 22, 0, 5111904, 12, 0, 5111906, 12, 0, 5111908, 12, 0, 5111910, 24, 0, 5177392, 0, 0, 5308420, 0, 0, 5308426, 11, 0, 5308428, 12, 0, 5308430, 12, 0, 5308432, 12, 0, 5308434, 12, 0, 5308436, 13, 0, 5373998, 0, 0 )
+tile_data = PoolIntArray( 3539035, -1073741800, 0, 3670041, -1073741800, 0, 3670107, -1073741801, 0, 3801113, -1073741801, 0, 3801179, -1073741801, 0, 3932185, -1073741801, 0, 3932251, -1073741801, 0, 4063257, -1073741801, 0, 4063323, -1073741801, 0, 4194329, -1073741801, 0, 4194395, -1073741801, 0, 4325401, -1073741801, 0, 4325467, -1073741802, 0, 4456473, -1073741802, 0, 4456504, 0, 0, 4456510, 22, 0, 4456512, 12, 0, 4456514, 12, 0, 4456516, 12, 0, 4456518, 24, 0, 4456523, 22, 0, 4456525, 23, 0, 4456527, 23, 0, 4456529, 23, 0, 4456531, 23, 0, 4456533, 23, 0, 4456535, 23, 0, 4456537, 24, 0, 4587522, 11, 0, 4587524, 13, 0, 4587529, 22, 0, 4587531, 23, 0, 4587533, 23, 0, 4587535, 23, 0, 4587537, 23, 0, 4587539, 23, 0, 4587541, 23, 0, 4587543, 24, 0, 4718645, 0, 0, 4980786, 0, 0, 5111830, 11, 0, 5111832, 13, 0, 5111838, 0, 0, 5111844, 0, 0, 5111877, 0, 0, 5111883, 0, 0, 5111889, 0, 0, 5111896, 0, 0, 5111902, 22, 0, 5111904, 12, 0, 5111906, 12, 0, 5111908, 12, 0, 5111910, 24, 0, 5177392, 0, 0, 5308420, 0, 0, 5308426, 11, 0, 5308428, 12, 0, 5308430, 12, 0, 5308432, 12, 0, 5308434, 12, 0, 5308436, 13, 0, 5373998, 0, 0 )
 
-[node name="Door" type="Area2D" parent="." instance=ExtResource( 9 )]
+[node name="Door" parent="." instance=ExtResource( 9 )]
 position = Vector2( 13167, 9750 )
-collision_layer = 2
-collision_mask = 2
-script = ExtResource( 6 )
 next_level = "LvL82"
 level = "LvL81"
 
-[node name="Collect" type="Node2D" parent="." instance=ExtResource( 8 )]
+[node name="Collect" parent="." instance=ExtResource( 8 )]
 position = Vector2( 11421, 7759 )
-
-[connection signal="area_entered" from="Door" to="Door" method="_on_door_area_entered"]
-[connection signal="area_exited" from="Door" to="Door" method="_on_door_area_exited"]

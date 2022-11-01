@@ -12,15 +12,6 @@ font_data = ExtResource( 17 )
 [node name="Main Menu" type="Node2D"]
 position = Vector2( 3968, 1536 )
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( -1410, 0 )
-current = true
-zoom = Vector2( 5, 5 )
-limit_smoothed = true
-smoothing_enabled = true
-editor_draw_limits = true
-script = ExtResource( 2 )
-
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 256, 256 )
@@ -71,6 +62,15 @@ margin_bottom = 2604.8
 custom_fonts/font = SubResource( 1 )
 text = "Exit"
 script = ExtResource( 18 )
+
+[node name="cam" type="Node2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="cam"]
+position = Vector2( -1410.09, 0 )
+current = true
+zoom = Vector2( 5, 5 )
+editor_draw_limits = true
+script = ExtResource( 2 )
 
 [connection signal="pressed" from="Buttons/Load" to="Buttons/Load" method="_on_Levels_pressed"]
 [connection signal="pressed" from="Buttons/New Game" to="Buttons/New Game" method="_on_New_Game_pressed"]
