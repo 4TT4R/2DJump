@@ -93,6 +93,9 @@ func _physics_process(delta):
 		if direction.y> 500:
 			can_jump = false
 		if is_on_floor():
+			if !can_jump:
+				get_node("Camera2D").shake(0.1,50,15)
+				get_node("Sfx/drop").play(0)
 			can_jump = true
 
 func animation_controller():
@@ -106,6 +109,7 @@ func animation_controller():
 func _on_Area2D_area_entered(area):
 	if area.is_in_group("Collect"):
 		get_node("Sfx/pickup").play(0)
+		get_node("Camera2D").shake(0.2,15,35)
 	if area.is_in_group("Kill") && !dead:
 		
 		once = false

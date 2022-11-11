@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://Assets/UI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Objects/Entities/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=5]
+[ext_resource path="res://Assets/Objects/Objects/Bullet.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=9]
@@ -59,3 +60,83 @@ level = "LvL82"
 
 [node name="Collect" parent="." instance=ExtResource( 9 )]
 position = Vector2( 189, 7934 )
+
+[node name="Bullets" type="Node2D" parent="."]
+
+[node name="Bullet" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 1870, 9426 )
+
+[node name="Bullet2" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 2414, 9436 )
+
+[node name="Bullet3" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 2414, 9436 )
+triger_number = 2
+
+[node name="Bullet4" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 2414, 9436 )
+triger_number = 3
+
+[node name="Bullet5" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 2414, 9436 )
+triger_number = 4
+
+[node name="Bullet6" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 4571, 9466 )
+
+[node name="Bullet7" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 5448, 9789 )
+
+[node name="Bullet8" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 6275, 9789 )
+
+[node name="Bullet9" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 7031, 9789 )
+
+[node name="Bullet10" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 8079, 9819 )
+
+[node name="Bullet11" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 9026, 9819 )
+
+[node name="Bullet12" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 9651, 9839 )
+
+[node name="Bullet13" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 9651, 9839 )
+triger_number = 2
+
+[node name="Bullet14" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 9651, 9839 )
+triger_number = 3
+
+[node name="Bullet15" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 9651, 9839 )
+triger_number = 4
+
+[node name="Bullet16" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 12322, 10020 )
+
+[node name="Bullet17" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 13189, 10967 )
+
+[node name="Bullet18" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 14872, 10967 )
+
+[node name="Bullet19" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 15537, 10846 )
+
+[node name="Bullet20" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 17734, 11148 )
+
+[node name="Bullet21" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 20284, 11843 )
+
+[node name="Bullet22" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 20556, 11460 )
+
+[node name="Bullet23" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 20799, 11109 )
+
+[node name="Bullet24" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 21461, 11052 )
