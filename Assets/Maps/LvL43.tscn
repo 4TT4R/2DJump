@@ -8,7 +8,7 @@
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Assets/Scripts/Door.gd" type="Script" id=9]
+[ext_resource path="res://Assets/Objects/Objects/Bullet.tscn" type="PackedScene" id=9]
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -56,16 +56,66 @@ theme = SubResource( 8 )
 [node name="UI" parent="Player/Camera2D" instance=ExtResource( 3 )]
 position = Vector2( 27, 13 )
 
-[node name="Door" type="Area2D" parent="." instance=ExtResource( 8 )]
+[node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 20168, 10250 )
-collision_layer = 2
-collision_mask = 2
-script = ExtResource( 9 )
 next_level = "LvL44"
 level = "LvL43"
 
-[node name="Collect" type="Node2D" parent="." instance=ExtResource( 6 )]
+[node name="Collect" parent="." instance=ExtResource( 6 )]
 position = Vector2( 18577, 9773 )
 
-[connection signal="area_entered" from="Door" to="Door" method="_on_door_area_entered"]
-[connection signal="area_exited" from="Door" to="Door" method="_on_door_area_exited"]
+[node name="Bullets" type="Node2D" parent="."]
+
+[node name="Bullet" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 1029, 9454 )
+
+[node name="Bullet2" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 2450, 9444 )
+
+[node name="Bullet3" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 3206, 9454 )
+
+[node name="Bullet4" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 4809, 9131 )
+
+[node name="Bullet5" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 5252, 9121 )
+
+[node name="Bullet6" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 7187, 9111 )
+
+[node name="Bullet7" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 7580, 9121 )
+
+[node name="Bullet8" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 7943, 9121 )
+
+[node name="Bullet9" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 9505, 8909 )
+
+[node name="Bullet10" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 9918, 8899 )
+
+[node name="Bullet11" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 11883, 8879 )
+
+[node name="Bullet12" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 12387, 8919 )
+
+[node name="Bullet13" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 14141, 10189 )
+
+[node name="Bullet14" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 14705, 10169 )
+
+[node name="Bullet15" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 17053, 11167 )
+
+[node name="Bullet16" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 17446, 11157 )
+
+[node name="Bullet17" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 17809, 11147 )
+
+[node name="Bullet18" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 19553, 10945 )

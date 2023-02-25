@@ -8,7 +8,7 @@
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Assets/Scripts/Door.gd" type="Script" id=9]
+[ext_resource path="res://Assets/Objects/Objects/Bullet.tscn" type="PackedScene" id=9]
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -53,16 +53,58 @@ cell_size = Vector2( 128, 128 )
 format = 1
 tile_data = PoolIntArray( 3735633, 0, 0, 3735637, 22, 0, 3735639, 12, 0, 3735641, 12, 0, 3735643, 24, 0, 3801111, -1073741800, 0, 3866721, 22, 0, 3866723, 12, 0, 3866725, 12, 0, 3866727, 12, 0, 3866729, 24, 0, 3932183, -1073741801, 0, 3932239, 0, 0, 3997808, 22, 0, 3997810, 12, 0, 3997812, 12, 0, 3997814, 24, 0, 4063255, -1073741801, 0, 4128845, 0, 0, 4128892, 22, 0, 4128894, 12, 0, 4128896, 12, 0, 4128898, 12, 0, 4128900, 12, 0, 4128902, 24, 0, 4128908, 22, 0, 4128910, 12, 0, 4128912, 12, 0, 4128914, 12, 0, 4128916, 12, 0, 4128918, 24, 0, 4194327, -1073741801, 0, 4259915, 0, 0, 4325399, -1073741801, 0, 4390985, 0, 0, 4456471, -1073741802, 0, 4587521, 22, 0, 4587523, 12, 0, 4587525, 24, 0, 4587529, 22, 0, 4587531, 23, 0, 4587533, 23, 0, 4587535, 23, 0, 4587537, 23, 0, 4587539, 23, 0, 4587541, 24, 0, 4587585, 22, 0, 4587587, 12, 0, 4587589, 12, 0, 4587591, 24, 0, 4718634, 22, 0, 4718636, 12, 0, 4718638, 12, 0, 4718640, 24, 0, 4718647, 22, 0, 4718649, 12, 0, 4718651, 12, 0, 4718653, 12, 0, 4718655, 24, 0, 4849700, 22, 0, 4849702, 12, 0, 4849704, 24, 0, 4980764, 22, 0, 4980766, 12, 0, 4980768, 12, 0, 4980770, 24, 0, 5111813, 0, 0, 5111818, 0, 0, 5111823, 0, 0, 5111828, 0, 0, 5111834, 0, 0 )
 
-[node name="Door" type="Area2D" parent="." instance=ExtResource( 8 )]
+[node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 19299, 7833 )
-collision_layer = 2
-collision_mask = 2
-script = ExtResource( 9 )
 next_level = "LvL70"
 level = "LvL69"
 
-[node name="Collect" type="Node2D" parent="." instance=ExtResource( 6 )]
+[node name="Collect" parent="." instance=ExtResource( 6 )]
 position = Vector2( 2704, 8241 )
 
-[connection signal="area_entered" from="Door" to="Door" method="_on_door_area_entered"]
-[connection signal="area_exited" from="Door" to="Door" method="_on_door_area_exited"]
+[node name="Bullets" type="Node2D" parent="."]
+
+[node name="Bullet" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 3632, 8276 )
+direction = "LEFT"
+
+[node name="Bullet2" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 1224, 10445 )
+
+[node name="Bullet3" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 2076, 10455 )
+
+[node name="Bullet4" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 3394, 10455 )
+
+[node name="Bullet5" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 4751, 10128 )
+
+[node name="Bullet6" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 6653, 9791 )
+
+[node name="Bullet7" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 8397, 9672 )
+
+[node name="Bullet8" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 9794, 8899 )
+
+[node name="Bullet9" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 10200, 8513 )
+
+[node name="Bullet10" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 10517, 8018 )
+
+[node name="Bullet11" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 11250, 7859 )
+
+[node name="Bullet12" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 12895, 8453 )
+
+[node name="Bullet13" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 14886, 8423 )
+
+[node name="Bullet14" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 16481, 8839 )
+
+[node name="Bullet15" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 18770, 8720 )

@@ -8,7 +8,7 @@
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Assets/Scripts/Door.gd" type="Script" id=9]
+[ext_resource path="res://Assets/Objects/Objects/Bullet.tscn" type="PackedScene" id=9]
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -56,16 +56,47 @@ theme = SubResource( 8 )
 [node name="UI" parent="Player/Camera2D" instance=ExtResource( 3 )]
 position = Vector2( 27, 13 )
 
-[node name="Door" type="Area2D" parent="." instance=ExtResource( 8 )]
+[node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 13701, 8969 )
-collision_layer = 2
-collision_mask = 2
-script = ExtResource( 9 )
 next_level = "LvL46"
 level = "LvL45"
 
-[node name="Collect" type="Node2D" parent="." instance=ExtResource( 6 )]
+[node name="Collect" parent="." instance=ExtResource( 6 )]
 position = Vector2( 10955, 8822 )
 
-[connection signal="area_entered" from="Door" to="Door" method="_on_door_area_entered"]
-[connection signal="area_exited" from="Door" to="Door" method="_on_door_area_exited"]
+[node name="Bullets" type="Node2D" parent="."]
+
+[node name="Bullet" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 921, 9415 )
+
+[node name="Bullets2" type="Node2D" parent="."]
+
+[node name="Bullet" parent="Bullets2" instance=ExtResource( 9 )]
+position = Vector2( 2380, 9890 )
+
+[node name="Bullet2" parent="Bullets2" instance=ExtResource( 9 )]
+position = Vector2( 3059, 9901 )
+
+[node name="Bullet3" parent="Bullets2" instance=ExtResource( 9 )]
+position = Vector2( 5118, 10840 )
+
+[node name="Bullet4" parent="Bullets2" instance=ExtResource( 9 )]
+position = Vector2( 5627, 10817 )
+
+[node name="Bullet5" parent="Bullets2" instance=ExtResource( 9 )]
+position = Vector2( 7098, 10817 )
+
+[node name="Bullet6" parent="Bullets2" instance=ExtResource( 9 )]
+position = Vector2( 7358, 10783 )
+
+[node name="Bullet7" parent="Bullets2" instance=ExtResource( 9 )]
+position = Vector2( 11816, 9708 )
+triger_number = 2
+
+[node name="Bullet8" parent="Bullets2" instance=ExtResource( 9 )]
+position = Vector2( 9225, 10262 )
+triger_number = 2
+
+[node name="Bullet9" parent="Bullets2" instance=ExtResource( 9 )]
+position = Vector2( 10572, 9945 )
+triger_number = 2

@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://Assets/UI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Objects/Entities/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=5]
+[ext_resource path="res://Assets/Objects/Objects/Bullet.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=9]
@@ -59,3 +60,103 @@ level = "LvL73"
 
 [node name="Collect" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1010, 9723 )
+
+[node name="Bullets" type="Node2D" parent="."]
+
+[node name="Bullet" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( -826, 9708 )
+direction = "RIGHT"
+
+[node name="Bullet2" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 2538, 10883 )
+
+[node name="Bullet3" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 3275, 10926 )
+
+[node name="Bullet4" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 4567, 10755 )
+
+[node name="Bullet5" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 5379, 10509 )
+
+[node name="Bullet6" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 5838, 9911 )
+
+[node name="Bullet7" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 6084, 9505 )
+
+[node name="Bullet8" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 6586, 9291 )
+
+[node name="Bullet9" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 7633, 9259 )
+
+[node name="Bullet10" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 9117, 9077 )
+
+[node name="Bullet11" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 10655, 8265 )
+
+[node name="Bullet12" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 10954, 7859 )
+
+[node name="Bullet13" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 11189, 7496 )
+
+[node name="Bullet16" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 11189, 7496 )
+triger_number = 2
+
+[node name="Bullet17" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 11189, 7496 )
+triger_number = 3
+
+[node name="Bullet18" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 11189, 7496 )
+triger_number = 5
+
+[node name="Bullet19" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 11189, 7496 )
+triger_number = 6
+
+[node name="Bullet20" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 11189, 7496 )
+triger_number = 6
+
+[node name="Bullet21" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 11189, 7496 )
+triger_number = 8
+
+[node name="Bullet22" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 11189, 7496 )
+triger_number = 8
+
+[node name="Bullet23" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 11189, 7496 )
+triger_number = 9
+
+[node name="Bullet24" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 11189, 7496 )
+triger_number = 11
+
+[node name="Bullet25" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 11189, 7496 )
+triger_number = 11
+
+[node name="Bullet26" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 11189, 7496 )
+triger_number = 12
+
+[node name="Bullet27" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 11189, 7496 )
+triger_number = 13
+
+[node name="Bullet28" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 11189, 7496 )
+triger_number = 14
+
+[node name="Bullet14" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 11413, 7069 )
+
+[node name="Bullet15" parent="Bullets" instance=ExtResource( 6 )]
+position = Vector2( 11915, 6855 )
