@@ -1,11 +1,13 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://Assets/UI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Objects/Entities/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=5]
+[ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=8]
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -14,7 +16,7 @@ font_data = ExtResource( 7 )
 [sub_resource type="Theme" id=8]
 default_font = SubResource( 7 )
 
-[node name="LvL3" type="Node2D"]
+[node name="LvL38" type="Node2D"]
 position = Vector2( -8, 0 )
 script = ExtResource( 1 )
 
@@ -31,6 +33,7 @@ position = Vector2( -157, -14 )
 tile_set = ExtResource( 5 )
 cell_size = Vector2( 128, 128 )
 format = 1
+tile_data = PoolIntArray( 4587524, 22, 0, 4587526, 23, 0, 4587528, 23, 0, 4587530, 24, 0, 4587537, 22, 0, 4587539, 23, 0, 4587541, 23, 0, 4587543, 24, 0, 4587638, 0, 0, 4587644, 0, 0, 4587649, 0, 0, 4587659, 22, 0, 4587661, 23, 0, 4587663, 23, 0, 4587665, 23, 0, 4587667, 24, 0, 4653090, 0, 0, 4653099, 0, 0, 4784243, 0, 0, 4849773, 0, 0, 4915305, 0, 0, 4980837, 0, 0, 5111866, 0, 0, 5111873, 0, 0, 5111880, 0, 0, 5111888, 0, 0, 5111896, 0, 0, 5111903, 0, 0, 5242931, 0, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 612, 8707 )
@@ -51,3 +54,11 @@ theme = SubResource( 8 )
 
 [node name="UI" parent="Player/Camera2D" instance=ExtResource( 3 )]
 position = Vector2( 27, 13 )
+
+[node name="Collect" parent="." instance=ExtResource( 8 )]
+position = Vector2( 14085, 8428 )
+
+[node name="Door" parent="." instance=ExtResource( 6 )]
+position = Vector2( 18715, 8714 )
+next_level = "LvL39"
+level = "LvL38"

@@ -1,11 +1,13 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://Assets/UI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Objects/Entities/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=5]
+[ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=8]
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -14,7 +16,7 @@ font_data = ExtResource( 7 )
 [sub_resource type="Theme" id=8]
 default_font = SubResource( 7 )
 
-[node name="LvL3" type="Node2D"]
+[node name="LvL29" type="Node2D"]
 position = Vector2( -8, 0 )
 script = ExtResource( 1 )
 
@@ -31,6 +33,7 @@ position = Vector2( -157, -14 )
 tile_set = ExtResource( 5 )
 cell_size = Vector2( 128, 128 )
 format = 1
+tile_data = PoolIntArray( 4259893, 22, 0, 4259895, 23, 0, 4259897, 23, 0, 4259899, 24, 0, 4259906, 22, 0, 4259908, 23, 0, 4259910, 23, 0, 4259912, 23, 0, 4259914, 24, 0, 4390955, 22, 0, 4390957, 23, 0, 4390959, 24, 0, 4456617, 22, 0, 4456619, 23, 0, 4456621, 23, 0, 4456623, 23, 0, 4456625, 24, 0, 4522000, 22, 0, 4522002, 23, 0, 4522004, 23, 0, 4522006, 24, 0, 4522016, 22, 0, 4522018, 23, 0, 4522020, 23, 0, 4522022, 24, 0, 4587524, 22, 0, 4587526, 24, 0, 4587629, 22, 0, 4587631, 23, 0, 4587633, 23, 0, 4587635, 23, 0, 4587637, 24, 0, 4587646, 0, 0, 4587653, 0, 0, 4587659, 0, 0, 4587668, 22, 0, 4587670, 23, 0, 4587672, 23, 0, 4587674, 23, 0, 4587676, 24, 0, 4718674, 22, 0, 4718676, 23, 0, 4718678, 23, 0, 4718680, 24, 0, 4718687, 22, 0, 4718689, 23, 0, 4718691, 23, 0, 4718693, 23, 0, 4718695, 24, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 612, 8707 )
@@ -51,3 +54,11 @@ theme = SubResource( 8 )
 
 [node name="UI" parent="Player/Camera2D" instance=ExtResource( 3 )]
 position = Vector2( 27, 13 )
+
+[node name="Collect" parent="." instance=ExtResource( 6 )]
+position = Vector2( 20363, 7927 )
+
+[node name="Door" parent="." instance=ExtResource( 8 )]
+position = Vector2( 22613, 8457 )
+next_level = "LvL30"
+level = "LvL29"

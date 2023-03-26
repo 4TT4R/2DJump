@@ -1,11 +1,13 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://Assets/UI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Objects/Entities/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=5]
+[ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=8]
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -14,7 +16,7 @@ font_data = ExtResource( 7 )
 [sub_resource type="Theme" id=8]
 default_font = SubResource( 7 )
 
-[node name="LvL3" type="Node2D"]
+[node name="LvL40" type="Node2D"]
 position = Vector2( -8, 0 )
 script = ExtResource( 1 )
 
@@ -31,6 +33,7 @@ position = Vector2( -157, -14 )
 tile_set = ExtResource( 5 )
 cell_size = Vector2( 128, 128 )
 format = 1
+tile_data = PoolIntArray( 4587524, 22, 0, 4587526, 23, 0, 4587528, 23, 0, 4587530, 24, 0, 4784144, 22, 0, 4784146, 23, 0, 4784148, 23, 0, 4784150, 23, 0, 4784152, 24, 0, 4784158, 0, 0, 4784166, 0, 0, 4784172, 0, 0, 5242981, 22, 0, 5242983, 23, 0, 5242985, 23, 0, 5242987, 23, 0, 5242989, 24, 0, 5374040, 0, 0, 5439539, 0, 0, 5439569, 0, 0, 5505082, 0, 0, 5570625, 0, 0, 5570631, 0, 0, 5570636, 0, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 612, 8707 )
@@ -51,3 +54,11 @@ theme = SubResource( 8 )
 
 [node name="UI" parent="Player/Camera2D" instance=ExtResource( 3 )]
 position = Vector2( 27, 13 )
+
+[node name="Collect" parent="." instance=ExtResource( 8 )]
+position = Vector2( 11640, 9602 )
+
+[node name="Door" parent="." instance=ExtResource( 6 )]
+position = Vector2( 13785, 9992 )
+next_level = "LvL41"
+level = "LvL40"

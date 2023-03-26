@@ -1,11 +1,13 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://Assets/UI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Objects/Entities/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=5]
+[ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=8]
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -14,7 +16,7 @@ font_data = ExtResource( 7 )
 [sub_resource type="Theme" id=8]
 default_font = SubResource( 7 )
 
-[node name="LvL3" type="Node2D"]
+[node name="LvL31" type="Node2D"]
 position = Vector2( -8, 0 )
 script = ExtResource( 1 )
 
@@ -31,6 +33,7 @@ position = Vector2( -157, -14 )
 tile_set = ExtResource( 5 )
 cell_size = Vector2( 128, 128 )
 format = 1
+tile_data = PoolIntArray( 4522028, 0, 0, 4522038, 0, 0, 4587524, 22, 0, 4587526, 24, 0, 4587543, 0, 0, 4587601, 0, 0, 4653071, 0, 0, 4653127, 0, 0, 4653132, 0, 0, 4718623, 0, 0, 4718633, 0, 0, 4718653, 0, 0, 4849816, 22, 0, 4849818, 23, 0, 4849820, 23, 0, 4849822, 23, 0, 4849824, 24, 0, 4849830, 0, 0, 4849837, 0, 0, 4915402, 22, 0, 4915404, 23, 0, 4915406, 23, 0, 4915408, 23, 0, 4915410, 23, 0, 4915412, 24, 0, 4980881, 0, 0, 5046461, 0, 0, 5111933, 0, 0, 5111940, 0, 0, 5111947, 0, 0, 5111991, 0, 0, 5177434, 0, 0, 5242992, 0, 0, 5243000, 0, 0, 5243058, 0, 0, 5308515, 0, 0, 5308523, 0, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 612, 8707 )
@@ -51,3 +54,11 @@ theme = SubResource( 8 )
 
 [node name="UI" parent="Player/Camera2D" instance=ExtResource( 3 )]
 position = Vector2( 27, 13 )
+
+[node name="Collect" parent="." instance=ExtResource( 8 )]
+position = Vector2( 24467, 8954 )
+
+[node name="Door" parent="." instance=ExtResource( 6 )]
+position = Vector2( 27088, 9354 )
+next_level = "LvL32"
+level = "LvL31"

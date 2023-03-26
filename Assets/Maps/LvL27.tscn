@@ -1,11 +1,13 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://Assets/UI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Objects/Entities/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/TileSets/Basic.tres" type="TileSet" id=5]
+[ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=8]
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -14,7 +16,7 @@ font_data = ExtResource( 7 )
 [sub_resource type="Theme" id=8]
 default_font = SubResource( 7 )
 
-[node name="LvL3" type="Node2D"]
+[node name="LvL27" type="Node2D"]
 position = Vector2( -8, 0 )
 script = ExtResource( 1 )
 
@@ -31,6 +33,7 @@ position = Vector2( -157, -14 )
 tile_set = ExtResource( 5 )
 cell_size = Vector2( 128, 128 )
 format = 1
+tile_data = PoolIntArray( 4456540, 0, 0, 4456548, 0, 0, 4587524, 11, 0, 4587526, 12, 0, 4587528, 13, 0, 4587535, 22, 0, 4587537, 23, 0, 4587539, 24, 0, 4587548, 22, 0, 4587550, 23, 0, 4587552, 23, 0, 4587554, 23, 0, 4587556, 0, 0, 4587565, 22, 0, 4587567, 23, 0, 4587569, 23, 0, 4587571, 24, 0, 4587582, 0, 0, 4587592, 0, 0, 4587599, 0, 0, 4587630, 0, 0, 4718772, 22, 0, 4718774, 23, 0, 4718776, 23, 0, 4718778, 23, 0, 4718780, 23, 0, 4718782, 24, 0, 4849812, 0, 0, 4849824, 0, 0, 4849834, 0, 0, 4915325, 0, 0, 4915332, 0, 0, 5046412, 0, 0, 5111928, 0, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 612, 8707 )
@@ -51,3 +54,11 @@ theme = SubResource( 8 )
 
 [node name="UI" parent="Player/Camera2D" instance=ExtResource( 3 )]
 position = Vector2( 27, 13 )
+
+[node name="Collect" parent="." instance=ExtResource( 6 )]
+position = Vector2( 10361, 7917 )
+
+[node name="Door" parent="." instance=ExtResource( 8 )]
+position = Vector2( 24188, 8970 )
+next_level = "LvL28"
+level = "LvL27"
