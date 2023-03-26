@@ -11,8 +11,9 @@ export var next_level = "LvL00"
 export var level = "LvL00"
 onready var sprite = get_node("Sprite")
 var open = false
+var locked = true
 func _ready():
-	pass
+	sprite.set_texture(Close)
 
 
 func _process(delta):
@@ -21,18 +22,21 @@ func _process(delta):
 		get_parent().get_parent().get_node("door_go").play(0)
 		get_parent().get_parent().next_level = next_level
 		get_parent().get_parent().changelevel2("Levels", level, get_parent().colected)
-			
 
 
 
+func unlock():
+	
+	sprite.set_texture(Open)
+	locked = false
 
 func _on_door_area_entered(_area):
-	sprite.set_texture(Open)
-	get_node("door").play(0)
-	open = true
-
+	if !locked:
+		sprite.set_texture(Open)
+		
+		open = true
+	else:
+		get_node("door").play(0)
 
 func _on_door_area_exited(_area):
-	sprite.set_texture(Close)
-	get_node("door").play(0)
-	open = false
+	pass

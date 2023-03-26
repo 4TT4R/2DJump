@@ -18,6 +18,7 @@ func _ready():
 
 func _on_Area2D_area_entered(area):
 	if area.is_in_group("Player"):
+		get_parent().get_parent().get_node("Door").unlock()
 		get_parent().queue_free()
 		get_parent().get_parent().colected = true
 

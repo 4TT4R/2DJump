@@ -123,7 +123,7 @@ next_level = "LvL03"
 level = "LvL02"
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1151, 8553 )
+position = Vector2( 909, 8689 )
 BOUNDS_MAX = Vector2( 20000, 11826 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]

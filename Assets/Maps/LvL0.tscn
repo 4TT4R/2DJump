@@ -88,10 +88,6 @@ cell_size = Vector2( 128, 128 )
 format = 1
 tile_data = PoolIntArray( 655382, 27, 0, 655384, 27, 0, 655386, 27, 0, 655388, 27, 0, 655390, 27, 0, 655392, 27, 0, 655394, 27, 0, 655396, 27, 0, 655398, 27, 0, 655400, 27, 0, 655402, 27, 0, 655404, 27, 0, 655406, 27, 0, 786454, 26, 0, 786456, 26, 0, 786458, 26, 0, 786460, 26, 0, 786462, 26, 0, 786464, 26, 0, 786466, 26, 0, 786468, 26, 0, 786470, 26, 0, 786472, 26, 0, 786474, 26, 0, 786476, 26, 0, 786478, 26, 0, 917526, 26, 0, 917528, 26, 0, 917530, 26, 0, 917532, 26, 0, 917534, 26, 0, 917536, 26, 0, 917538, 26, 0, 917540, 26, 0, 917542, 26, 0, 917544, 26, 0, 917546, 26, 0, 917548, 26, 0, 917550, 26, 0 )
 
-[node name="Door" parent="." instance=ExtResource( 7 )]
-position = Vector2( 9376, 8489 )
-next_level = "LvL01"
-
 [node name="Area2D2" type="Area2D" parent="."]
 scale = Vector2( 1.0133, 0.994896 )
 collision_layer = 4
@@ -125,6 +121,10 @@ tile_data = PoolIntArray( -458874, 3, 0, -458873, 5, 0, -458872, 3, 0, -458871, 
 
 [node name="Collect" parent="." instance=ExtResource( 8 )]
 position = Vector2( 4051, 6772 )
+
+[node name="Door" parent="." instance=ExtResource( 7 )]
+position = Vector2( 9376, 8489 )
+next_level = "LvL01"
 
 [connection signal="area_entered" from="Area2D2" to="Area2D2" method="_on_Jump_area_entered"]
 [connection signal="area_exited" from="Area2D2" to="Area2D2" method="_on_Jump_area_exited"]
