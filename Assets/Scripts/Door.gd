@@ -31,11 +31,8 @@ func unlock():
 	locked = false
 
 func _on_door_area_entered(_area):
-	if !locked:
 		sprite.set_texture(Open)
-		
 		open = true
-	else:
 		get_node("door").play(0)
 
 func _on_door_area_exited(_area):
