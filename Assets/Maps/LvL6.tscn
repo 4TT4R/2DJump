@@ -11,6 +11,12 @@ position = Vector2( 34, 9333 )
 [node name="UI" parent="Player/Camera2D" index="1"]
 position = Vector2( -49, 21 )
 
+[node name="Bullet8" parent="BG/bullets" index="7"]
+position = Vector2( 8618, 9623 )
+
+[node name="Bullet12" parent="BG/bullets" index="11"]
+position = Vector2( 4699, 9909 )
+
 [node name="Fake_Door" parent="." index="2" instance=ExtResource( 2 )]
 position = Vector2( 1234, 10305 )
 

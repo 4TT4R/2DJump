@@ -12,7 +12,7 @@ position = Vector2( 1997, 10122 )
 position = Vector2( 18161, 15469 )
 
 [node name="Fake_Door" parent="." index="3"]
-position = Vector2( 678, 10205 )
+position = Vector2( 653, 10231 )
 
 [node name="Door" parent="." index="4"]
 position = Vector2( 22270, 12066 )

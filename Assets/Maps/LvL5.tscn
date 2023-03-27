@@ -21,10 +21,10 @@ tile_data = PoolIntArray( 4980734, 11, 0, 4915200, 12, 0, 4915202, 12, 0, 491520
 position = Vector2( 2934, 9375 )
 
 [node name="Bullet" parent="." index="5" instance=ExtResource( 2 )]
-position = Vector2( 207, 9900 )
+position = Vector2( 219, 9906 )
 
 [node name="Bullet2" parent="." index="6" instance=ExtResource( 2 )]
-position = Vector2( 699, 9908 )
+position = Vector2( 687, 9908 )
 
 [node name="Bullet3" parent="." index="7" instance=ExtResource( 2 )]
 position = Vector2( 1126, 9908 )
