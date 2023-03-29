@@ -16,7 +16,7 @@ font_data = ExtResource( 7 )
 [sub_resource type="Theme" id=8]
 default_font = SubResource( 7 )
 
-[node name="LvL3" type="Node2D"]
+[node name="LvL8" type="Node2D"]
 position = Vector2( -8, 0 )
 script = ExtResource( 1 )
 

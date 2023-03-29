@@ -40,7 +40,7 @@ func _on_Triger_area_entered(area):
 		counter += 1
 		if counter >= triger_number:
 			trigered = true
-	
+			add_to_group("Kill")
 
 
 func _on_Bullet_body_entered(body):

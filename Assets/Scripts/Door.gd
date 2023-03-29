@@ -26,9 +26,9 @@ func _process(delta):
 
 
 func unlock():
-	
-	sprite.set_texture(Open)
-	locked = false
+	pass
+#	sprite.set_texture(Open)
+#	locked = false
 
 func _on_door_area_entered(_area):
 		sprite.set_texture(Open)

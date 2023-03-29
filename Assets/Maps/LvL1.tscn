@@ -54,6 +54,14 @@ theme = SubResource( 8 )
 
 [node name="UI" parent="Player/Camera2D" instance=ExtResource( 9 )]
 
+[node name="Door" parent="." instance=ExtResource( 2 )]
+position = Vector2( 20587, 9753 )
+next_level = "LvL02"
+level = "LvL01"
+
+[node name="Collect" parent="." instance=ExtResource( 7 )]
+position = Vector2( 13840, 8508 )
+
 [node name="Bullets" type="Node2D" parent="."]
 
 [node name="Bullet" parent="Bullets" instance=ExtResource( 4 )]
@@ -94,11 +102,3 @@ position = Vector2( 17701, 11098 )
 
 [node name="Bullet13" parent="Bullets" instance=ExtResource( 4 )]
 position = Vector2( 19024, 10342 )
-
-[node name="Door" parent="." instance=ExtResource( 2 )]
-position = Vector2( 20587, 9753 )
-next_level = "LvL02"
-level = "LvL01"
-
-[node name="Collect" parent="." instance=ExtResource( 7 )]
-position = Vector2( 13840, 8508 )
