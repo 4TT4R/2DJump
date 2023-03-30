@@ -64,54 +64,54 @@ position = Vector2( 13840, 8508 )
 [node name="Bullets" type="Node2D" parent="."]
 
 [node name="Bullet" parent="Bullets" instance=ExtResource( 6 )]
-position = Vector2( 1064, 9469 )
+position = Vector2( 1064, 9383 )
 
 [node name="Bullet2" parent="Bullets" instance=ExtResource( 6 )]
-position = Vector2( 1776, 9056 )
+position = Vector2( 1755, 8878 )
 
 [node name="Bullet3" parent="Bullets" instance=ExtResource( 6 )]
-position = Vector2( 2518, 8322 )
+position = Vector2( 2518, 8144 )
 
 [node name="Bullet4" parent="Bullets" instance=ExtResource( 6 )]
-position = Vector2( 3430, 8293 )
+position = Vector2( 3430, 8115 )
 
 [node name="Bullet5" parent="Bullets" instance=ExtResource( 6 )]
-position = Vector2( 5639, 8279 )
+position = Vector2( 5639, 8101 )
 
 [node name="Bullet6" parent="Bullets" instance=ExtResource( 6 )]
-position = Vector2( 9723, 8272 )
+position = Vector2( 9709, 8129 )
 
 [node name="Bullet7" parent="Bullets" instance=ExtResource( 6 )]
-position = Vector2( 9723, 8272 )
+position = Vector2( 9709, 8129 )
 triger_number = 2
 
 [node name="Bullet8" parent="Bullets" instance=ExtResource( 6 )]
-position = Vector2( 9723, 8272 )
+position = Vector2( 9709, 8129 )
 triger_number = 3
 
 [node name="Bullet9" parent="Bullets" instance=ExtResource( 6 )]
-position = Vector2( 9723, 8272 )
+position = Vector2( 9709, 8129 )
 triger_number = 4
 
 [node name="Bullet10" parent="Bullets" instance=ExtResource( 6 )]
-position = Vector2( 9723, 8272 )
+position = Vector2( 9709, 8129 )
 triger_number = 5
 
 [node name="Bullet11" parent="Bullets" instance=ExtResource( 6 )]
-position = Vector2( 9723, 8272 )
+position = Vector2( 9709, 8129 )
 triger_number = 6
 
 [node name="Bullet12" parent="Bullets" instance=ExtResource( 6 )]
-position = Vector2( 9723, 8272 )
+position = Vector2( 9709, 8129 )
 triger_number = 7
 
 [node name="Bullet13" parent="Bullets" instance=ExtResource( 6 )]
-position = Vector2( 9723, 8272 )
+position = Vector2( 9709, 8129 )
 triger_number = 8
 
 [node name="Bullet14" parent="Bullets" instance=ExtResource( 6 )]
-position = Vector2( 12039, 8436 )
+position = Vector2( 12025, 8030 )
 
 [node name="Bullet15" parent="Bullets" instance=ExtResource( 6 )]
-position = Vector2( 12031, 8558 )
+position = Vector2( 12017, 8152 )
 direction = "RIGHT"
