@@ -12,19 +12,20 @@ export var level = "LvL00"
 onready var sprite = get_node("Sprite")
 var open = false
 var locked = true
+var next
 func _ready():
 	sprite.set_texture(Close)
 
 
 func _process(delta):
 	if open:
+		get_parent().times()
+		get_parent().get_node("Player").sprite.play("Idle")
 
-		get_parent().get_parent().get_node("door_go").play(0)
-		get_parent().get_parent().next_level = next_level
-		get_parent().get_parent().changelevel2("Levels", level, get_parent().colected)
-
-
-
+func next():
+	get_parent().get_parent().get_node("door_go").play(0)
+	get_parent().get_parent().next_level = next_level
+	get_parent().get_parent().changelevel2("Levels", level, get_parent().colected)
 func unlock():
 	pass
 #	sprite.set_texture(Open)

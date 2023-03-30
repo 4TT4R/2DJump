@@ -23,7 +23,7 @@ default_font = SubResource( 7 )
 script = ExtResource( 2 )
 
 [node name="Player" parent="." groups=["Player"] instance=ExtResource( 5 )]
-position = Vector2( 619, 8708 )
+position = Vector2( 653, 9326 )
 BOUNDS_MAX = Vector2( 20000, 20000 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -54,50 +54,62 @@ tile_data = PoolIntArray( -458874, 3, 0, -458873, 5, 0, -458872, 3, 0, -458871, 
 [node name="Bullet" parent="Bullets" instance=ExtResource( 8 )]
 position = Vector2( 4292, 10883 )
 direction = "RIGHT"
+SPEED = 10000
 
 [node name="Bullet2" parent="Bullets" instance=ExtResource( 8 )]
 position = Vector2( 4282, 10702 )
 direction = "RIGHT"
+SPEED = 10000
 
 [node name="Bullet3" parent="Bullets" instance=ExtResource( 8 )]
 position = Vector2( 4282, 10521 )
 direction = "RIGHT"
+SPEED = 10000
 
 [node name="Bullet4" parent="Bullets" instance=ExtResource( 8 )]
 position = Vector2( 4282, 10331 )
 direction = "RIGHT"
+SPEED = 10000
 
 [node name="Bullet5" parent="Bullets" instance=ExtResource( 8 )]
 position = Vector2( 2170, 10340 )
 direction = "RIGHT"
+SPEED = 10000
 
 [node name="Bullet6" parent="Bullets" instance=ExtResource( 8 )]
 position = Vector2( 2161, 10578 )
 direction = "RIGHT"
+SPEED = 10000
 
 [node name="Bullet7" parent="Bullets" instance=ExtResource( 8 )]
 position = Vector2( 2170, 10778 )
 direction = "RIGHT"
+SPEED = 10000
 
 [node name="Bullet8" parent="Bullets" instance=ExtResource( 8 )]
 position = Vector2( 2237, 10949 )
 direction = "RIGHT"
+SPEED = 10000
 
 [node name="Bullet11" parent="Bullets" instance=ExtResource( 8 )]
 position = Vector2( 2979, 10807 )
 direction = "RIGHT"
+SPEED = 10000
 
 [node name="Bullet12" parent="Bullets" instance=ExtResource( 8 )]
 position = Vector2( 2970, 10997 )
 direction = "RIGHT"
+SPEED = 10000
 
 [node name="Bullet9" parent="Bullets" instance=ExtResource( 8 )]
 position = Vector2( 2979, 10569 )
 direction = "RIGHT"
+SPEED = 10000
 
 [node name="Bullet10" parent="Bullets" instance=ExtResource( 8 )]
 position = Vector2( 2998, 10331 )
 direction = "RIGHT"
+SPEED = 10000
 
 [node name="Bullet13" parent="Bullets" instance=ExtResource( 8 )]
 position = Vector2( 5701, 10071 )

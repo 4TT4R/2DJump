@@ -83,3 +83,7 @@ func _on_New_Game_pressed():
 	get_parent().get_parent().get_parent().get_node("Save").reset()
 	get_parent().get_parent().get_parent().changelevel("Levels")
 
+
+
+func _on_next():
+	get_parent().get_parent().get_node("Door").next() # Replace with function body.

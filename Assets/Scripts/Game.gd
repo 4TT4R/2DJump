@@ -10,7 +10,12 @@ var HP
 var level = "Tutorial"
 var pause
 var colected
+var times
 var is_paused = false
+export var Gold = "00:00:00"
+export var Silver = "00:00:00"
+export var Bronze = "00:00:00"
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
@@ -35,4 +40,11 @@ func _on_Pause_pressed():
 		add_child(pause)
 		pause.global_position = get_node("Player").get_node("Camera2D").global_position +get_node("Player").get_node("Camera2D").offset
 		pause.z_index=5
+	
+func times():
+	is_paused = true
+	times = load("res://Assets/Maps/times.tscn").instance()
+	add_child(times)
+	times.global_position = get_node("Player").get_node("Camera2D").global_position +get_node("Player").get_node("Camera2D").offset
+	times.z_index=5
 	
