@@ -21,7 +21,7 @@ default_font = SubResource( 7 )
 script = ExtResource( 1 )
 
 [node name="Player" parent="." groups=["Player"] instance=ExtResource( 4 )]
-position = Vector2( 619, 8708 )
+position = Vector2( 1001, 8717 )
 BOUNDS_MAX = Vector2( 20000, 20000 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -64,7 +64,7 @@ position = Vector2( 1010, 9723 )
 [node name="Bullets" type="Node2D" parent="."]
 
 [node name="Bullet" parent="Bullets" instance=ExtResource( 6 )]
-position = Vector2( -826, 9708 )
+position = Vector2( -834, 9674 )
 direction = "RIGHT"
 
 [node name="Bullet2" parent="Bullets" instance=ExtResource( 6 )]

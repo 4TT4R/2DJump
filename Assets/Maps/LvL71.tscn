@@ -156,7 +156,7 @@ position = Vector2( 13222, 8884 )
 position = Vector2( 15411, 8937 )
 
 [node name="Bullet39" parent="Bullet" instance=ExtResource( 6 )]
-position = Vector2( 17259, 8958 )
+position = Vector2( 17259, 8822 )
 
 [node name="Bullet26" parent="Bullet" instance=ExtResource( 6 )]
 position = Vector2( 13425, 7507 )

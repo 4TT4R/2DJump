@@ -55,7 +55,7 @@ format = 1
 tile_data = PoolIntArray( 3604504, -1073741800, 0, 3735576, -1073741801, 0, 3866648, -1073741801, 0, 3997720, -1073741801, 0, 4128792, -1073741801, 0, 4259864, -1073741801, 0, 4325400, -1073741801, 0, 4456472, -1073741802, 0, 4587521, 22, 0, 4587523, 12, 0, 4587525, 12, 0, 4587527, 24, 0, 4587532, 22, 0, 4587534, 23, 0, 4587536, 23, 0, 4587538, 23, 0, 4587540, 23, 0, 4587542, 24, 0, 5308423, 0, 0, 5308429, 0, 0, 5308437, 0, 0, 5308445, 22, 0, 5308447, 12, 0, 5308449, 12, 0, 5308451, 12, 0, 5308453, 12, 0, 5308455, 12, 0, 5308457, 24, 0, 5439537, 22, 0, 5439539, 12, 0, 5439541, 12, 0, 5439543, 12, 0, 5439545, 12, 0, 5439547, 12, 0, 5439549, 12, 0, 5439551, 24, 0, 5570631, 22, 0, 5570633, 12, 0, 5570635, 12, 0, 5570637, 12, 0, 5570639, 24, 0, 5570647, 22, 0, 5570649, 12, 0, 5570651, 12, 0, 5570653, 12, 0, 5570655, 12, 0, 5570657, 12, 0, 5570659, 24, 0, 5570665, 22, 0, 5570667, 12, 0, 5570669, 12, 0, 5570671, 24, 0, 5570718, 22, 0, 5570720, 12, 0, 5570722, 12, 0, 5570724, 12, 0, 5570726, 12, 0, 5570728, 12, 0, 5570730, 24, 0, 5570738, 22, 0, 5570740, 12, 0, 5570742, 12, 0, 5570744, 24, 0, 5701751, 22, 0, 5701753, 12, 0, 5701755, 12, 0, 5701757, 12, 0, 5701759, 12, 0, 5701761, 24, 0, 5701770, 22, 0, 5701772, 12, 0, 5701774, 12, 0, 5701776, 12, 0, 5701778, 12, 0, 5701780, 12, 0, 5701782, 12, 0, 5701784, 24, 0 )
 
 [node name="Door" parent="." instance=ExtResource( 8 )]
-position = Vector2( 23635, 10642 )
+position = Vector2( 23657, 10638 )
 next_level = "LvL71"
 level = "LvL70"
 
@@ -97,60 +97,60 @@ triger_number = 7
 position = Vector2( 2925, 9341 )
 
 [node name="Bullet8" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 1488, 10795 )
+position = Vector2( 1471, 10744 )
 
 [node name="Bullet9" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 2364, 10821 )
+position = Vector2( 2347, 10770 )
 
 [node name="Bullet10" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 4584, 10881 )
+position = Vector2( 4576, 10771 )
 
 [node name="Bullet11" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 7323, 11136 )
+position = Vector2( 7323, 11017 )
 
 [node name="Bullet12" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 9747, 11383 )
+position = Vector2( 9747, 11273 )
 
 [node name="Bullet13" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 9747, 11383 )
+position = Vector2( 9747, 11273 )
 triger_number = 2
 
 [node name="Bullet14" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 9747, 11383 )
+position = Vector2( 9747, 11273 )
 triger_number = 4
 
 [node name="Bullet15" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 9747, 11383 )
+position = Vector2( 9747, 11273 )
 triger_number = 5
 
 [node name="Bullet16" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 9747, 11383 )
+position = Vector2( 9747, 11273 )
 triger_number = 6
 
 [node name="Bullet17" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 9747, 11383 )
+position = Vector2( 9747, 11273 )
 triger_number = 7
 
 [node name="Bullet18" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 9747, 11383 )
+position = Vector2( 9747, 11273 )
 triger_number = 8
 
 [node name="Bullet19" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 9747, 11383 )
+position = Vector2( 9747, 11273 )
 triger_number = 9
 
 [node name="Bullet20" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 9747, 11383 )
+position = Vector2( 9747, 11273 )
 triger_number = 10
 
 [node name="Bullet21" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 13294, 11511 )
+position = Vector2( 13294, 11257 )
 
 [node name="Bullet22" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 17292, 11792 )
+position = Vector2( 17292, 11538 )
 
 [node name="Bullet23" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 20133, 11681 )
+position = Vector2( 20141, 11554 )
 
 [node name="Bullet24" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 22872, 11341 )
+position = Vector2( 22880, 11214 )
