@@ -31,7 +31,8 @@ func unlock():
 #	sprite.set_texture(Open)
 #	locked = false
 
-func _on_door_area_entered(_area):
+func _on_door_area_entered(area):
+	if area.is_in_group("Player"):
 		sprite.set_texture(Open)
 		open = true
 		get_node("door").play(0)

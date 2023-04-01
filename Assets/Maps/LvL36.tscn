@@ -74,7 +74,7 @@ direction = "RIGHT"
 position = Vector2( 3466, 9794 )
 
 [node name="Bullet3" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 1725, 9345 )
+position = Vector2( 1745, 9237 )
 
 [node name="Bullet4" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 4993, 9794 )

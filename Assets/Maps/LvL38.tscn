@@ -70,37 +70,35 @@ level = "LvL38"
 [node name="Bullets" type="Node2D" parent="."]
 
 [node name="Bullet" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 1787, 9477 )
+position = Vector2( 1787, 9333 )
 
-[node name="Bullets2" type="Node2D" parent="."]
+[node name="Bullet2" parent="Bullets" instance=ExtResource( 9 )]
+position = Vector2( 4831, 9484 )
 
-[node name="Bullet" parent="Bullets2" instance=ExtResource( 9 )]
-position = Vector2( 4831, 9628 )
-
-[node name="Bullet2" parent="Bullets2" instance=ExtResource( 9 )]
+[node name="Bullet3" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 6927, 10565 )
 
-[node name="Bullet3" parent="Bullets2" instance=ExtResource( 9 )]
+[node name="Bullet4" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 7824, 10263 )
 
-[node name="Bullet4" parent="Bullets2" instance=ExtResource( 9 )]
+[node name="Bullet5" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 8792, 10254 )
 
-[node name="Bullet5" parent="Bullets2" instance=ExtResource( 9 )]
+[node name="Bullet6" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 11836, 10304 )
 
-[node name="Bullet6" parent="Bullets2" instance=ExtResource( 9 )]
+[node name="Bullet7" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 13717, 10030 )
 
-[node name="Bullet7" parent="Bullets2" instance=ExtResource( 9 )]
+[node name="Bullet8" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 14294, 9731 )
 triger_number = 4
 
-[node name="Bullet8" parent="Bullets2" instance=ExtResource( 9 )]
+[node name="Bullet9" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 15511, 9336 )
 
-[node name="Bullet9" parent="Bullets2" instance=ExtResource( 9 )]
+[node name="Bullet10" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 16205, 9315 )
 
-[node name="Bullet10" parent="Bullets2" instance=ExtResource( 9 )]
+[node name="Bullet11" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 17230, 9336 )
