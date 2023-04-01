@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/Objects/Objects/Bullet.tscn" type="PackedScene" id=9]
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -62,3 +63,36 @@ position = Vector2( 9740, 7371 )
 position = Vector2( 14554, 6155 )
 next_level = "LvL19"
 level = "LvL18"
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2( 1440, 9364 )
+
+[node name="Bullet" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( -54, 13 )
+
+[node name="Bullet2" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 8328, -888 )
+
+[node name="Bullet3" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 6996, -875 )
+
+[node name="Bullet4" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 5691, -659 )
+
+[node name="Bullet5" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 4911, -404 )
+
+[node name="Bullet6" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 4130, -377 )
+
+[node name="Bullet7" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 2893, -350 )
+
+[node name="Bullet8" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 2005, -377 )
+
+[node name="Bullet9" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 1184, -336 )
+
+[node name="Bullet10" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 11463, -2704 )

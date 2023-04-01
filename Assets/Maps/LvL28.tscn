@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/Objects/Objects/Bullet.tscn" type="PackedScene" id=9]
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -62,3 +63,47 @@ position = Vector2( 20859, 9405 )
 position = Vector2( 18636, 11913 )
 next_level = "LvL29"
 level = "LvL28"
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Bullet" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 12849, 10459 )
+
+[node name="Bullet2" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 14612, 10612 )
+
+[node name="Bullet3" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 16155, 10544 )
+
+[node name="Bullet4" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 17324, 10595 )
+
+[node name="Bullet5" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 18307, 10578 )
+
+[node name="Bullet6" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 19697, 10560 )
+
+[node name="Bullet7" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 18070, 12442 )
+
+[node name="Bullet8" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 16765, 12595 )
+
+[node name="Bullet9" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 10764, 10510 )
+
+[node name="Bullet10" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 6865, 9018 )
+
+[node name="Bullet11" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 7493, 8950 )
+
+[node name="Bullet12" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 5611, 9053 )
+
+[node name="Bullet13" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 3543, 9306 )
+
+[node name="Bullet14" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 1610, 9289 )

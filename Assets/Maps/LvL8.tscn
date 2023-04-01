@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/Objects/Objects/Bullet.tscn" type="PackedScene" id=9]
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -59,3 +60,60 @@ tile_set = ExtResource( 5 )
 cell_size = Vector2( 128, 128 )
 format = 1
 tile_data = PoolIntArray( 4587525, 0, 0, 4587632, 25, 0, 4718612, 0, 0, 4718623, 22, 0, 4718625, 23, 0, 4718627, 23, 0, 4718629, 23, 0, 4718631, 24, 0, 4784215, 25, 0, 4784233, 25, 0, 4980855, 0, 0, 5046322, 18, 0, 5046324, 17, 0, 5046332, 22, 0, 5046334, 23, 0, 5046336, 23, 0, 5046338, 23, 0, 5046340, 23, 0, 5046342, 23, 0, 5046344, 23, 0, 5046346, 23, 0, 5046348, 23, 0, 5046350, 24, 0, 5046370, 0, 0, 5308544, 0, 0, 5374100, -1073741796, 0, 5505172, -1073741796, 0, 5636230, 0, 0, 5636244, -1073741796, 0, 5767316, -1073741796, 0, 5898388, -1073741796, 0, 6029460, -1073741796, 0, 6160526, 22, 0, 6160528, 23, 0, 6160530, 23, 0, 6160532, 23, 0, 6160534, 24, 0, 6226080, 25, 0, 6488219, 25, 0, 6684774, 25, 0, 6684785, 25, 0, 6750297, 25, 0, 6750333, 25, 0, 6750356, 25, 0, 6815877, 25, 0, 6881354, 23, 0, 6881356, 23, 0, 6881358, 24, 0, 6881419, 25, 0 )
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2( 1847, 9681 )
+
+[node name="Bullet" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 12126, 3730 )
+
+[node name="Bullet2" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 13546, 3730 )
+
+[node name="Bullet3" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 18289, 3141 )
+
+[node name="Bullet4" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 16476, 2613 )
+
+[node name="Bullet5" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 14815, 1072 )
+
+[node name="Bullet6" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 13577, 438 )
+
+[node name="Bullet7" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 12852, -181 )
+
+[node name="Bullet8" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 9016, 3881 )
+
+[node name="Bullet9" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 10985, 444 )
+
+[node name="Bullet10" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 9766, 102 )
+
+[node name="Bullet11" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 7912, 394 )
+
+[node name="Bullet12" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 7150, 406 )
+
+[node name="Bullet13" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 6400, 432 )
+
+[node name="Bullet14" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 5092, 394 )
+
+[node name="Bullet15" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 2946, -216 )
+
+[node name="Bullet16" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 2451, -229 )
+
+[node name="Bullet17" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 978, -203 )
+
+[node name="Bullet18" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( -597, -508 )

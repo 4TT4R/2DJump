@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Assets/Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Scripts/Camera2D.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Assets/Objects/Objects/Door.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Font/Font.ttf" type="DynamicFontData" id=7]
 [ext_resource path="res://Assets/Objects/Objects/Collect.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/Objects/Objects/Bullet.tscn" type="PackedScene" id=9]
 
 [sub_resource type="DynamicFont" id=7]
 size = 200
@@ -52,6 +53,9 @@ current = true
 zoom = Vector2( 5, 5 )
 script = ExtResource( 2 )
 
+[node name="UI" parent="Player/Camera2D" instance=ExtResource( 3 )]
+position = Vector2( 27, 13 )
+
 [node name="Label" type="Label" parent="Player/Camera2D"]
 margin_left = -2441.0
 margin_top = -1401.0
@@ -60,5 +64,53 @@ margin_bottom = -796.0
 rect_min_size = Vector2( 100, 100 )
 theme = SubResource( 8 )
 
-[node name="UI" parent="Player/Camera2D" instance=ExtResource( 3 )]
-position = Vector2( 27, 13 )
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2( 2069, 12076 )
+
+[node name="Bullet" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 19240, -2854 )
+
+[node name="Bullet2" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 17639, -2462 )
+
+[node name="Bullet3" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 16355, -2447 )
+
+[node name="Bullet4" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 15102, -2220 )
+
+[node name="Bullet5" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 14271, -2175 )
+
+[node name="Bullet6" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 12958, -2129 )
+
+[node name="Bullet7" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 11674, -2144 )
+
+[node name="Bullet8" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 10451, -2205 )
+
+[node name="Bullet9" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 9197, -1042 )
+
+[node name="Bullet10" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 8170, -785 )
+
+[node name="Bullet11" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 7007, -664 )
+
+[node name="Bullet12" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 4002, -3081 )
+
+[node name="Bullet13" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 2824, -3020 )
+
+[node name="Bullet14" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 1571, -2824 )
+
+[node name="Bullet15" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( 679, -2658 )
+
+[node name="Bullet16" parent="Node2D" instance=ExtResource( 9 )]
+position = Vector2( -725, -2804 )
