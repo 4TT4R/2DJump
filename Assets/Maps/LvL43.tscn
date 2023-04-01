@@ -37,7 +37,7 @@ format = 1
 tile_data = PoolIntArray( 4325448, 22, 0, 4325450, 12, 0, 4325452, 12, 0, 4325454, 12, 0, 4325456, 24, 0, 4325467, 22, 0, 4325469, 12, 0, 4325471, 12, 0, 4325473, 12, 0, 4325475, 24, 0, 4456484, 22, 0, 4456486, 12, 0, 4456488, 12, 0, 4456490, 12, 0, 4456492, 24, 0, 4456502, 22, 0, 4456504, 12, 0, 4456506, 12, 0, 4456508, 12, 0, 4456510, 24, 0, 4587522, 22, 0, 4587524, 12, 0, 4587526, 12, 0, 4587528, 24, 0, 4587536, 22, 0, 4587538, 12, 0, 4587540, 12, 0, 4587542, 12, 0, 4587544, 12, 0, 4587546, 24, 0, 4980844, 22, 0, 4980846, 12, 0, 4980848, 12, 0, 4980850, 12, 0, 4980852, 12, 0, 4980854, 24, 0, 5374102, 22, 0, 5374104, 12, 0, 5374106, 12, 0, 5374108, 12, 0, 5374110, 24, 0, 5505154, 22, 0, 5505156, 12, 0, 5505158, 12, 0, 5505160, 12, 0, 5505162, 12, 0, 5505164, 24, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 612, 8707 )
+position = Vector2( 596, 8699 )
 BOUNDS_MAX = Vector2( 20000, 11826 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -62,18 +62,18 @@ next_level = "LvL44"
 level = "LvL43"
 
 [node name="Collect" parent="." instance=ExtResource( 6 )]
-position = Vector2( 18577, 9773 )
+position = Vector2( 18457, 9397 )
 
 [node name="Bullets" type="Node2D" parent="."]
 
 [node name="Bullet" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 1029, 9454 )
+position = Vector2( 1029, 9358 )
 
 [node name="Bullet2" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 2450, 9444 )
+position = Vector2( 2450, 9348 )
 
 [node name="Bullet3" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 3206, 9454 )
+position = Vector2( 3206, 9358 )
 
 [node name="Bullet4" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 4809, 9131 )
@@ -91,31 +91,31 @@ position = Vector2( 7580, 9121 )
 position = Vector2( 7943, 9121 )
 
 [node name="Bullet9" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 9505, 8909 )
+position = Vector2( 9513, 8837 )
 
 [node name="Bullet10" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 9918, 8899 )
+position = Vector2( 9926, 8827 )
 
 [node name="Bullet11" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 11883, 8879 )
+position = Vector2( 11891, 8807 )
 
 [node name="Bullet12" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 12387, 8919 )
+position = Vector2( 12395, 8847 )
 
 [node name="Bullet13" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 14141, 10189 )
+position = Vector2( 14429, 10077 )
 
 [node name="Bullet14" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 14705, 10169 )
+position = Vector2( 14713, 10065 )
 
 [node name="Bullet15" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 17053, 11167 )
+position = Vector2( 17053, 11095 )
 
 [node name="Bullet16" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 17446, 11157 )
+position = Vector2( 17446, 11085 )
 
 [node name="Bullet17" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 17809, 11147 )
+position = Vector2( 17809, 11075 )
 
 [node name="Bullet18" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 19553, 10945 )
+position = Vector2( 19553, 10873 )

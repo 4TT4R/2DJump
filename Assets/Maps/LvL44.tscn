@@ -62,30 +62,30 @@ next_level = "LvL45"
 level = "LvL44"
 
 [node name="Collect" parent="." instance=ExtResource( 8 )]
-position = Vector2( 8857, 8792 )
+position = Vector2( 8697, 8512 )
 
 [node name="Bullets" type="Node2D" parent="."]
 
 [node name="Bullet" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 981, 9449 )
+position = Vector2( 989, 9377 )
 
 [node name="Bullet2" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 2610, 9257 )
+position = Vector2( 2610, 9153 )
 
 [node name="Bullet3" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 4273, 8850 )
+position = Vector2( 4273, 8746 )
 
 [node name="Bullet4" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 5631, 8522 )
+position = Vector2( 5631, 8418 )
 
 [node name="Bullet5" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 7158, 10095 )
+position = Vector2( 7166, 10047 )
 
 [node name="Bullet6" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 8493, 10061 )
+position = Vector2( 8501, 10013 )
 
 [node name="Bullet7" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 9738, 9812 )
+position = Vector2( 9746, 9764 )
 
 [node name="Bullet8" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 12046, 11023 )
