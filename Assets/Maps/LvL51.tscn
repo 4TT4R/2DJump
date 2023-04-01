@@ -61,63 +61,63 @@ next_level = "LvL52"
 level = "LvL51"
 
 [node name="Collect" parent="." instance=ExtResource( 8 )]
-position = Vector2( 13462, 7881 )
+position = Vector2( 13406, 7769 )
 
 [node name="Bullets" type="Node2D" parent="."]
 
 [node name="Bullet" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 1253, 9348 )
+position = Vector2( 1237, 9244 )
 
 [node name="Bullet2" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 2688, 9159 )
+position = Vector2( 2672, 9055 )
 
 [node name="Bullet3" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 3201, 9143 )
+position = Vector2( 3185, 9039 )
 
 [node name="Bullet4" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 4538, 9151 )
+position = Vector2( 4522, 9047 )
 
 [node name="Bullet5" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 5172, 9143 )
+position = Vector2( 5156, 9039 )
 
 [node name="Bullet6" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 7158, 9626 )
+position = Vector2( 7158, 9546 )
 
 [node name="Bullet7" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 7838, 9603 )
+position = Vector2( 7838, 9523 )
 
 [node name="Bullet8" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 9635, 9407 )
+position = Vector2( 9635, 9327 )
 
 [node name="Bullet9" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 10232, 9377 )
+position = Vector2( 10232, 9297 )
 
 [node name="Bullet10" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 12180, 9362 )
+position = Vector2( 12180, 9282 )
 
 [node name="Bullet11" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 14521, 9317 )
+position = Vector2( 14553, 9061 )
 
 [node name="Bullet12" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 14521, 9317 )
+position = Vector2( 14553, 9061 )
 triger_number = 2
 
 [node name="Bullet13" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 14521, 9317 )
+position = Vector2( 14553, 9061 )
 triger_number = 3
 
 [node name="Bullet14" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 14521, 9317 )
+position = Vector2( 14553, 9061 )
 triger_number = 4
 
 [node name="Bullet15" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 14521, 9317 )
+position = Vector2( 14553, 9061 )
 triger_number = 5
 
 [node name="Bullet16" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 14521, 9317 )
+position = Vector2( 14553, 9061 )
 triger_number = 6
 
 [node name="Bullet17" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 14521, 9317 )
+position = Vector2( 14553, 9061 )
 triger_number = 7
