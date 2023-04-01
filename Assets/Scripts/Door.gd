@@ -32,7 +32,9 @@ func unlock():
 #	locked = false
 
 func _on_door_area_entered(area):
-	if area.is_in_group("Player"):
+	if area.is_in_group("Player")&& !get_parent().get_node("Player").dead:
+		get_parent().get_node("Player").win = true
+		print(get_parent().get_node("Player").dead, " dead")
 		sprite.set_texture(Open)
 		open = true
 		get_node("door").play(0)

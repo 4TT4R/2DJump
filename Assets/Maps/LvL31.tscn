@@ -34,10 +34,10 @@ position = Vector2( -157, -14 )
 tile_set = ExtResource( 5 )
 cell_size = Vector2( 128, 128 )
 format = 1
-tile_data = PoolIntArray( 4522028, 0, 0, 4522038, 0, 0, 4587524, 22, 0, 4587526, 24, 0, 4587543, 0, 0, 4587601, 0, 0, 4653071, 0, 0, 4653127, 0, 0, 4653132, 0, 0, 4718623, 0, 0, 4718633, 0, 0, 4718653, 0, 0, 4849816, 22, 0, 4849818, 23, 0, 4849820, 23, 0, 4849822, 23, 0, 4849824, 24, 0, 4849830, 0, 0, 4849837, 0, 0, 4915402, 22, 0, 4915404, 23, 0, 4915406, 23, 0, 4915408, 23, 0, 4915410, 23, 0, 4915412, 24, 0, 4980881, 0, 0, 5046461, 0, 0, 5111933, 0, 0, 5111940, 0, 0, 5111947, 0, 0, 5111991, 0, 0, 5177434, 0, 0, 5242992, 0, 0, 5243000, 0, 0, 5243058, 0, 0, 5308515, 0, 0, 5308523, 0, 0 )
+tile_data = PoolIntArray( 4522028, 0, 0, 4522038, 0, 0, 4587524, 22, 0, 4587526, 24, 0, 4587543, 0, 0, 4587601, 0, 0, 4653071, 0, 0, 4653127, 0, 0, 4653132, 0, 0, 4718623, 0, 0, 4718633, 0, 0, 4718653, 0, 0, 4849816, 22, 0, 4849818, 23, 0, 4849820, 23, 0, 4849822, 23, 0, 4849824, 24, 0, 4849830, 0, 0, 4849837, 0, 0, 4915401, 22, 0, 4915403, 23, 0, 4915405, 23, 0, 4915407, 23, 0, 4915409, 23, 0, 4915411, 23, 0, 4915413, 24, 0, 4980881, 0, 0, 5046461, 0, 0, 5111933, 0, 0, 5111940, 0, 0, 5111947, 0, 0, 5111991, 0, 0, 5177434, 0, 0, 5242992, 0, 0, 5243000, 0, 0, 5243058, 0, 0, 5308515, 0, 0, 5308523, 0, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 580, 8663 )
+position = Vector2( 599, 8704 )
 BOUNDS_MAX = Vector2( 20000, 11826 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -108,99 +108,6 @@ position = Vector2( 15798, 10456 )
 
 [node name="Bullet14" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 16461, 10363 )
-triger_number = 2
-
-[node name="Bullet15" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 3
-
-[node name="Bullet16" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 4
-
-[node name="Bullet17" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 5
-
-[node name="Bullet18" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 6
-
-[node name="Bullet19" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 7
-
-[node name="Bullet20" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 8
-
-[node name="Bullet21" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 9
-
-[node name="Bullet22" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 10
-
-[node name="Bullet23" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 11
-
-[node name="Bullet24" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 12
-
-[node name="Bullet25" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 13
-
-[node name="Bullet26" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 15
-
-[node name="Bullet27" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 16
-
-[node name="Bullet28" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 17
-
-[node name="Bullet29" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 18
-
-[node name="Bullet30" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 19
-
-[node name="Bullet31" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 20
-
-[node name="Bullet32" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 21
-
-[node name="Bullet33" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 22
-
-[node name="Bullet34" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 23
-
-[node name="Bullet35" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 24
-
-[node name="Bullet36" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 25
-
-[node name="Bullet37" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 16461, 10363 )
-triger_number = 25
 
 [node name="Bullet38" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 17416, 10277 )
@@ -221,51 +128,6 @@ rotation = 0.00566641
 [node name="Bullet43" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 20902, 9778 )
 rotation = 0.00566641
-
-[node name="Bullet44" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 20902, 9778 )
-rotation = 0.00566641
-triger_number = 2
-
-[node name="Bullet45" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 20902, 9778 )
-rotation = 0.00566641
-triger_number = 3
-
-[node name="Bullet46" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 20902, 9778 )
-rotation = 0.00566641
-triger_number = 4
-
-[node name="Bullet47" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 20902, 9778 )
-rotation = 0.00566641
-triger_number = 5
-
-[node name="Bullet48" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 20902, 9778 )
-rotation = 0.00566641
-triger_number = 6
-
-[node name="Bullet49" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 20902, 9778 )
-rotation = 0.00566641
-triger_number = 7
-
-[node name="Bullet50" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 20902, 9778 )
-rotation = 0.00566641
-triger_number = 9
-
-[node name="Bullet51" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 20902, 9778 )
-rotation = 0.00566641
-triger_number = 9
-
-[node name="Bullet52" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 20902, 9778 )
-rotation = 0.00566641
-triger_number = 10
 
 [node name="Bullet53" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 21736, 9792 )

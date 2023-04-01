@@ -36,8 +36,9 @@ func _process(delta):
 		get_node("AnimatedSprite").play("Bullet")
 
 func _on_Triger_area_entered(area):
-	if area.is_in_group("Player"):
+	if area.is_in_group("Player") && !get_parent().get_parent().get_node("Player").win:
 		counter += 1
+		
 		if counter >= triger_number:
 			trigered = true
 			add_to_group("Kill")

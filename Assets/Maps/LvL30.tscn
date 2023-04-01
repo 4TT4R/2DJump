@@ -59,9 +59,6 @@ position = Vector2( 27, 13 )
 [node name="Collect" parent="." instance=ExtResource( 8 )]
 position = Vector2( 15522, 8021 )
 
-[node name="Door" parent="Collect" instance=ExtResource( 6 )]
-position = Vector2( 3495, 181 )
-
 [node name="Node2D" type="Node2D" parent="."]
 
 [node name="Bullet" parent="Node2D" instance=ExtResource( 9 )]
@@ -80,10 +77,10 @@ position = Vector2( 15646, 10459 )
 position = Vector2( 13646, 10696 )
 
 [node name="Bullet6" parent="Node2D" instance=ExtResource( 9 )]
-position = Vector2( 11527, 11188 )
+position = Vector2( 11535, 11061 )
 
 [node name="Bullet7" parent="Node2D" instance=ExtResource( 9 )]
-position = Vector2( 8899, 11035 )
+position = Vector2( 8924, 10815 )
 
 [node name="Bullet8" parent="Node2D" instance=ExtResource( 9 )]
 position = Vector2( 7865, 10053 )
@@ -99,3 +96,8 @@ position = Vector2( 3611, 9272 )
 
 [node name="Bullet12" parent="Node2D" instance=ExtResource( 9 )]
 position = Vector2( 1678, 9306 )
+
+[node name="Door" parent="." instance=ExtResource( 6 )]
+position = Vector2( 19017, 8202 )
+next_level = "LvL31"
+level = "LvL30"

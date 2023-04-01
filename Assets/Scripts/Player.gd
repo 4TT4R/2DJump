@@ -11,6 +11,7 @@ var counter = 0
 var once = true
 var dead = false
 var speed = RUN
+var win = false
 var up = false
 var left = false
 var right = false
@@ -70,8 +71,19 @@ func move(delta):
 	
 
 func _physics_process(delta):
-	
+	if get_parent().is_paused:
+		get_node("Sfx/Die").stop()
+		get_node("Sfx/drop").stop()
+		get_node("Sfx/jump").stop()
+		get_node("Sfx/pickup").stop()
+		get_node("Sfx/walk").stop()
+		if get_node("Sprite").animation == "Run":
+			get_node("Sprite").play("Idle")
+		else:
+			get_node("Sprite").stop()
 	if !get_parent().is_paused:
+		if !get_node("Sprite").playing:
+			get_node("Sprite").play()
 		if position.y > BOUNDS_MAX.y:
 			once = false
 			dead = true
@@ -108,7 +120,7 @@ func _on_Area2D_area_entered(area):
 	if area.is_in_group("Collect"):
 		get_node("Sfx/pickup").play(0)
 		get_node("Camera2D").shake(0.2,15,35)
-	if area.is_in_group("Kill") && !dead:
+	if area.is_in_group("Kill") && !dead && !win:
 		
 		once = false
 		dead = true
