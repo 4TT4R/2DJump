@@ -48,6 +48,8 @@ tile_data = PoolIntArray( -458874, 3, 0, -458873, 5, 0, -458872, 3, 0, -458871, 
 
 [node name="Door" parent="." instance=ExtResource( 3 )]
 position = Vector2( 12895, 12281 )
+next_level = "LvL05"
+level = "LvL04"
 
 [node name="Tiles" type="TileMap" parent="."]
 tile_set = ExtResource( 6 )
@@ -59,49 +61,25 @@ tile_data = PoolIntArray( 4980734, 11, 0, 4915200, 12, 0, 4915202, 12, 0, 491520
 position = Vector2( 896, 640 )
 
 [node name="Bullet" parent="bullets" instance=ExtResource( 8 )]
-position = Vector2( 11087, 11162 )
-triger_number = 7
-
-[node name="Bullet2" parent="bullets" instance=ExtResource( 8 )]
-position = Vector2( 11107, 11192 )
-triger_number = 6
-
-[node name="Bullet3" parent="bullets" instance=ExtResource( 8 )]
-position = Vector2( 11097, 11192 )
-triger_number = 5
-
-[node name="Bullet4" parent="bullets" instance=ExtResource( 8 )]
-position = Vector2( 11137, 11172 )
-triger_number = 4
-
-[node name="Bullet5" parent="bullets" instance=ExtResource( 8 )]
-position = Vector2( 11107, 11172 )
-triger_number = 3
-
-[node name="Bullet6" parent="bullets" instance=ExtResource( 8 )]
-position = Vector2( 11107, 11152 )
-triger_number = 2
-
-[node name="Bullet7" parent="bullets" instance=ExtResource( 8 )]
-position = Vector2( 11087, 11132 )
+position = Vector2( 11246, 11222 )
 
 [node name="Bullet8" parent="bullets" instance=ExtResource( 8 )]
-position = Vector2( 8174, 9217 )
+position = Vector2( 8325, 9247 )
 
 [node name="Bullet9" parent="bullets" instance=ExtResource( 8 )]
-position = Vector2( 10200, 11364 )
+position = Vector2( 10313, 11424 )
 
 [node name="Bullet10" parent="bullets" instance=ExtResource( 8 )]
-position = Vector2( 7499, 9660 )
+position = Vector2( 7680, 9690 )
 
 [node name="Bullet11" parent="bullets" instance=ExtResource( 8 )]
-position = Vector2( 5594, 10205 )
+position = Vector2( 5737, 10296 )
 
 [node name="Bullet12" parent="bullets" instance=ExtResource( 8 )]
-position = Vector2( 4445, 9731 )
+position = Vector2( 4573, 9807 )
 
 [node name="Bullet13" parent="bullets" instance=ExtResource( 8 )]
-position = Vector2( 2257, 9711 )
+position = Vector2( 2385, 9771 )
 
 [node name="Bullet14" parent="bullets" instance=ExtResource( 8 )]
 position = Vector2( -123, 9242 )

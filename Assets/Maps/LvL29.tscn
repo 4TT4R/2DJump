@@ -34,7 +34,7 @@ position = Vector2( -157, -14 )
 tile_set = ExtResource( 5 )
 cell_size = Vector2( 128, 128 )
 format = 1
-tile_data = PoolIntArray( 4259893, 22, 0, 4259895, 23, 0, 4259897, 23, 0, 4259899, 24, 0, 4259906, 22, 0, 4259908, 23, 0, 4259910, 23, 0, 4259912, 23, 0, 4259914, 24, 0, 4390955, 22, 0, 4390957, 23, 0, 4390959, 24, 0, 4456617, 22, 0, 4456619, 23, 0, 4456621, 23, 0, 4456623, 23, 0, 4456625, 24, 0, 4522000, 22, 0, 4522002, 23, 0, 4522004, 23, 0, 4522006, 24, 0, 4522016, 22, 0, 4522018, 23, 0, 4522020, 23, 0, 4522022, 24, 0, 4587524, 22, 0, 4587526, 24, 0, 4587629, 22, 0, 4587631, 23, 0, 4587633, 23, 0, 4587635, 23, 0, 4587637, 24, 0, 4587646, 0, 0, 4587653, 0, 0, 4587659, 0, 0, 4587668, 22, 0, 4587670, 23, 0, 4587672, 23, 0, 4587674, 23, 0, 4587676, 24, 0, 4718674, 22, 0, 4718676, 23, 0, 4718678, 23, 0, 4718680, 24, 0, 4718687, 22, 0, 4718689, 23, 0, 4718691, 23, 0, 4718693, 23, 0, 4718695, 24, 0 )
+tile_data = PoolIntArray( 4259893, 22, 0, 4259895, 23, 0, 4259897, 23, 0, 4259899, 24, 0, 4259906, 22, 0, 4259908, 23, 0, 4259910, 23, 0, 4259912, 23, 0, 4259914, 24, 0, 4390955, 22, 0, 4390957, 23, 0, 4390959, 24, 0, 4456616, 11, 0, 4456618, 12, 0, 4456620, 12, 0, 4456622, 12, 0, 4456624, 12, 0, 4456626, 13, 0, 4522000, 22, 0, 4522002, 23, 0, 4522004, 23, 0, 4522006, 24, 0, 4522016, 22, 0, 4522018, 23, 0, 4522020, 23, 0, 4522022, 24, 0, 4587524, 22, 0, 4587526, 24, 0, 4587629, 22, 0, 4587631, 23, 0, 4587633, 23, 0, 4587635, 23, 0, 4587637, 24, 0, 4587646, 0, 0, 4587653, 0, 0, 4587659, 0, 0, 4587668, 22, 0, 4587670, 23, 0, 4587672, 23, 0, 4587674, 23, 0, 4587676, 24, 0, 4718674, 22, 0, 4718676, 23, 0, 4718678, 23, 0, 4718680, 24, 0, 4718687, 22, 0, 4718689, 23, 0, 4718691, 23, 0, 4718693, 23, 0, 4718695, 24, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 612, 8707 )
@@ -57,7 +57,7 @@ theme = SubResource( 8 )
 position = Vector2( 27, 13 )
 
 [node name="Collect" parent="." instance=ExtResource( 6 )]
-position = Vector2( 20363, 7927 )
+position = Vector2( 20406, 7670 )
 
 [node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 22613, 8457 )
@@ -70,34 +70,34 @@ level = "LvL29"
 position = Vector2( 22359, 9035 )
 
 [node name="Bullet2" parent="Node2D" instance=ExtResource( 9 )]
-position = Vector2( 20240, 9459 )
+position = Vector2( 20240, 9388 )
 
 [node name="Bullet3" parent="Node2D" instance=ExtResource( 9 )]
 position = Vector2( 17985, 9391 )
 
 [node name="Bullet4" parent="Node2D" instance=ExtResource( 9 )]
-position = Vector2( 16460, 9425 )
+position = Vector2( 16531, 9339 )
 
 [node name="Bullet5" parent="Node2D" instance=ExtResource( 9 )]
-position = Vector2( 15290, 9612 )
+position = Vector2( 15297, 9327 )
 
 [node name="Bullet6" parent="Node2D" instance=ExtResource( 9 )]
-position = Vector2( 13442, 9544 )
+position = Vector2( 13478, 9451 )
 
 [node name="Bullet7" parent="Node2D" instance=ExtResource( 9 )]
 position = Vector2( 11544, 9611 )
 
 [node name="Bullet8" parent="Node2D" instance=ExtResource( 9 )]
-position = Vector2( 9611, 8916 )
+position = Vector2( 9632, 8667 )
 
 [node name="Bullet9" parent="Node2D" instance=ExtResource( 9 )]
-position = Vector2( 7815, 8883 )
+position = Vector2( 7836, 8634 )
 
 [node name="Bullet10" parent="Node2D" instance=ExtResource( 9 )]
-position = Vector2( 6272, 9086 )
+position = Vector2( 6293, 8837 )
 
 [node name="Bullet11" parent="Node2D" instance=ExtResource( 9 )]
-position = Vector2( 5119, 9154 )
+position = Vector2( 5140, 9168 )
 
 [node name="Bullet12" parent="Node2D" instance=ExtResource( 9 )]
 position = Vector2( 3238, 9154 )

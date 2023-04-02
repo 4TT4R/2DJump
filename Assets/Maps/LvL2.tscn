@@ -55,8 +55,8 @@ next_level = "LvL03"
 level = "LvL02"
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 909, 8689 )
-BOUNDS_MAX = Vector2( 20000, 11826 )
+position = Vector2( 11444, 12724 )
+BOUNDS_MAX = Vector2( 20000, 13786 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
@@ -112,7 +112,7 @@ position = Vector2( 8922, 12719 )
 direction = "RIGHT"
 
 [node name="Bullet12" parent="Bullets" instance=ExtResource( 5 )]
-position = Vector2( 11828, 13573 )
+position = Vector2( 11817, 13573 )
 
 [node name="Bullet13" parent="Bullets" instance=ExtResource( 5 )]
 position = Vector2( 13302, 13566 )
@@ -139,4 +139,4 @@ position = Vector2( 21244, 13804 )
 position = Vector2( 22406, 13804 )
 
 [node name="Bullet21" parent="Bullets" instance=ExtResource( 5 )]
-position = Vector2( 23237, 13786 )
+position = Vector2( 23180, 13786 )

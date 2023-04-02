@@ -69,9 +69,9 @@ position = Vector2( 1280, 32.2 )
 Unlock = true
 Level_Name = "LvL3"
 Level = "03"
-Gold = "00:11:00"
-Silver = "00:15:00"
-Bronze = "00:20:00"
+Gold = "00:00:33"
+Silver = "00:00:38"
+Bronze = "00:00:43"
 
 [node name="Level_button5" parent="pg1" instance=ExtResource( 1 )]
 position = Vector2( 1664, 32.2 )

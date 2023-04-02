@@ -62,7 +62,7 @@ next_level = "LvL21"
 level = "LvL20"
 
 [node name="Collect" parent="." instance=ExtResource( 8 )]
-position = Vector2( 9324, 6656 )
+position = Vector2( 9367, 6336 )
 
 [node name="Node2D" type="Node2D" parent="."]
 

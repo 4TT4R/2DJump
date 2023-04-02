@@ -53,6 +53,8 @@ position = Vector2( 9692, 13228 )
 
 [node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 19075, 11784 )
+next_level = "LvL09"
+level = "LvL08"
 
 [node name="Tiles" type="TileMap" parent="."]
 position = Vector2( -157, -14 )
@@ -92,7 +94,7 @@ position = Vector2( 9016, 3881 )
 position = Vector2( 10985, 444 )
 
 [node name="Bullet10" parent="Node2D" instance=ExtResource( 9 )]
-position = Vector2( 9766, 102 )
+position = Vector2( 9771, -41 )
 
 [node name="Bullet11" parent="Node2D" instance=ExtResource( 9 )]
 position = Vector2( 7912, 394 )

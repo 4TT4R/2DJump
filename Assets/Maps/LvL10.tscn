@@ -70,7 +70,7 @@ position = Vector2( 5802, -1126 )
 position = Vector2( 4675, -1269 )
 
 [node name="Bullet14" parent="Node2D" index="13" instance=ExtResource( 4 )]
-position = Vector2( 3977, -1611 )
+position = Vector2( 3985, -1770 )
 
 [node name="Bullet15" parent="Node2D" index="14" instance=ExtResource( 4 )]
 position = Vector2( 3621, -1711 )

@@ -34,7 +34,7 @@ position = Vector2( -157, -14 )
 tile_set = ExtResource( 5 )
 cell_size = Vector2( 128, 128 )
 format = 1
-tile_data = PoolIntArray( 4587524, 22, 0, 4587526, 23, 0, 4587528, 24, 0, 4587538, 22, 0, 4587540, 23, 0, 4587542, 23, 0, 4587544, 24, 0, 5046357, 0, 0, 5177416, 0, 0, 5308454, 0, 0, 5308466, 0, 0, 5308475, 0, 0, 5963876, 0, 0 )
+tile_data = PoolIntArray( 4587524, 22, 0, 4587526, 23, 0, 4587528, 24, 0, 4587538, 22, 0, 4587540, 23, 0, 4587542, 23, 0, 4587544, 24, 0, 5046357, 0, 0, 5177417, 0, 0, 5308454, 0, 0, 5308466, 0, 0, 5308478, 0, 0, 5963876, 0, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 543, 8706 )
@@ -57,7 +57,7 @@ theme = SubResource( 8 )
 position = Vector2( 27, 13 )
 
 [node name="Collect" parent="." instance=ExtResource( 6 )]
-position = Vector2( 7882, 9183 )
+position = Vector2( 8326, 9063 )
 
 [node name="Door" parent="." instance=ExtResource( 8 )]
 position = Vector2( 12778, 11401 )
@@ -80,7 +80,7 @@ position = Vector2( 10013, 800 )
 position = Vector2( 8442, 1042 )
 
 [node name="Bullet5" parent="Node2D" instance=ExtResource( 9 )]
-position = Vector2( 6735, 1253 )
+position = Vector2( 6997, 1248 )
 
 [node name="Bullet6" parent="Node2D" instance=ExtResource( 9 )]
 position = Vector2( 5512, 1253 )

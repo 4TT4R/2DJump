@@ -38,7 +38,7 @@ tile_data = PoolIntArray( 4325432, 0, 0, 4456479, 22, 0, 4456481, 23, 0, 4456483
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 612, 8707 )
-BOUNDS_MAX = Vector2( 20000, 11826 )
+BOUNDS_MAX = Vector2( 20000, 12453 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
@@ -85,7 +85,7 @@ position = Vector2( 18307, 10578 )
 position = Vector2( 19697, 10560 )
 
 [node name="Bullet7" parent="Node2D" instance=ExtResource( 9 )]
-position = Vector2( 18070, 12442 )
+position = Vector2( 18110, 12453 )
 
 [node name="Bullet8" parent="Node2D" instance=ExtResource( 9 )]
 position = Vector2( 16765, 12595 )
@@ -94,10 +94,10 @@ position = Vector2( 16765, 12595 )
 position = Vector2( 10764, 10510 )
 
 [node name="Bullet10" parent="Node2D" instance=ExtResource( 9 )]
-position = Vector2( 6865, 9018 )
+position = Vector2( 6878, 8991 )
 
 [node name="Bullet11" parent="Node2D" instance=ExtResource( 9 )]
-position = Vector2( 7493, 8950 )
+position = Vector2( 7480, 8748 )
 
 [node name="Bullet12" parent="Node2D" instance=ExtResource( 9 )]
 position = Vector2( 5611, 9053 )
