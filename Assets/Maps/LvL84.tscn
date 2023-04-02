@@ -25,7 +25,7 @@ script = ExtResource( 1 )
 position = Vector2( 11781, 8018 )
 
 [node name="Player" parent="." groups=["Player"] instance=ExtResource( 4 )]
-position = Vector2( 619, 8708 )
+position = Vector2( 12903, 11426 )
 BOUNDS_MAX = Vector2( 20000, 20000 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -60,7 +60,7 @@ tile_data = PoolIntArray( 3145788, -1073741800, 0, 3276860, -1073741801, 0, 3407
 [node name="Door" parent="." instance=ExtResource( 6 )]
 position = Vector2( 12823, 12685 )
 next_level = "LvL85"
-level = "LvL84 "
+level = "LvL84"
 
 [node name="Collect" parent="." instance=ExtResource( 8 )]
 position = Vector2( 7466, 7695 )
@@ -72,22 +72,6 @@ position = Vector2( 1405, 9279 )
 
 [node name="Bullet2" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 2277, 9295 )
-
-[node name="Bullet3" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 2277, 9295 )
-triger_number = 2
-
-[node name="Bullet4" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 2277, 9295 )
-triger_number = 3
-
-[node name="Bullet5" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 2277, 9295 )
-triger_number = 4
-
-[node name="Bullet6" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 2277, 9295 )
-triger_number = 5
 
 [node name="Bullet7" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 3077, 8967 )
@@ -118,6 +102,3 @@ position = Vector2( 10541, 8903 )
 
 [node name="Bullet16" parent="Bullets" instance=ExtResource( 9 )]
 position = Vector2( 11717, 8511 )
-
-[node name="Bullet17" parent="Bullets" instance=ExtResource( 9 )]
-position = Vector2( 14029, 13307 )

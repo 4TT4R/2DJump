@@ -51,7 +51,7 @@ tile_data = PoolIntArray( -458874, 3, 0, -458873, 5, 0, -458872, 3, 0, -458871, 
 tile_set = ExtResource( 5 )
 cell_size = Vector2( 128, 128 )
 format = 1
-tile_data = PoolIntArray( 4259849, 11, 0, 4259851, 12, 0, 4259853, 12, 0, 4259855, 12, 0, 4259857, 13, 0, 4587522, 11, 0, 4587524, 13, 0, 4587542, 11, 0, 4587544, 12, 0, 4587546, 13, 0, 4849700, 0, 0, 4849709, 0, 0, 4849718, 0, 0, 4849726, 0, 0, 5046364, 0, 0, 5046371, 11, 0, 5046373, 12, 0, 5046375, 12, 0, 5046377, 13, 0, 5111876, -1610612736, 0, 5111877, 0, 0, 5242948, -1610612736, 0, 5242969, 0, 0, 5374020, -1610612736, 0, 5505092, -1610612736, 0, 5505110, 0, 0, 5636164, -1610612736, 0, 5636172, 0, 0, 5767237, 0, 0, 5767251, 0, 0 )
+tile_data = PoolIntArray( 4259849, 11, 0, 4259851, 12, 0, 4259853, 12, 0, 4259855, 12, 0, 4259857, 13, 0, 4456455, 25, 0, 4587522, 11, 0, 4587524, 13, 0, 4587542, 11, 0, 4587544, 12, 0, 4587546, 13, 0, 4849700, 0, 0, 4849709, 0, 0, 4849718, 0, 0, 4849726, 0, 0, 5046364, 0, 0, 5046371, 11, 0, 5046373, 12, 0, 5046375, 12, 0, 5046377, 13, 0, 5111876, -1610612736, 0, 5111877, 0, 0, 5242948, -1610612736, 0, 5242969, 0, 0, 5374020, -1610612736, 0, 5505092, -1610612736, 0, 5505110, 0, 0, 5636164, -1610612736, 0, 5636172, 0, 0, 5767237, 0, 0, 5767251, 0, 0 )
 
 [node name="Door" parent="." instance=ExtResource( 9 )]
 position = Vector2( 13545, 9625 )
@@ -59,16 +59,34 @@ next_level = "LvL91"
 level = "LvL90"
 
 [node name="Collect" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1296, 7454 )
+position = Vector2( 1315, 7276 )
 
 [node name="Bullets" type="Node2D" parent="."]
 
 [node name="Bullet" parent="Bullets" instance=ExtResource( 8 )]
-position = Vector2( -631, 7444 )
+position = Vector2( -612, 7266 )
 direction = "RIGHT"
 
 [node name="Bullet2" parent="Bullets" instance=ExtResource( 8 )]
 position = Vector2( 875, 9078 )
+
+[node name="Bullet15" parent="Bullets" instance=ExtResource( 8 )]
+position = Vector2( 3726, 9281 )
+
+[node name="Bullet16" parent="Bullets" instance=ExtResource( 8 )]
+position = Vector2( 5466, 9738 )
+
+[node name="Bullet17" parent="Bullets" instance=ExtResource( 8 )]
+position = Vector2( 7669, 9744 )
+
+[node name="Bullet18" parent="Bullets" instance=ExtResource( 8 )]
+position = Vector2( 11002, 11369 )
+
+[node name="Bullet19" parent="Bullets" instance=ExtResource( 8 )]
+position = Vector2( 11402, 10887 )
+
+[node name="Bullet20" parent="Bullets" instance=ExtResource( 8 )]
+position = Vector2( 12329, 10214 )
 
 [node name="Bullet3" parent="Bullets" instance=ExtResource( 8 )]
 position = Vector2( 1420, 8864 )

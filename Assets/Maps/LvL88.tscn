@@ -99,11 +99,10 @@ position = Vector2( 10101, 10873 )
 position = Vector2( 12265, 11475 )
 
 [node name="Bullet13" parent="Bullets2" instance=ExtResource( 6 )]
-position = Vector2( 13729, 10631 )
-triger_number = 2
+position = Vector2( 13910, 10382 )
 
 [node name="Bullet8" parent="Bullets2" instance=ExtResource( 6 )]
-position = Vector2( 6635, 10765 )
+position = Vector2( 6023, 10799 )
 direction = "RIGHT"
 
 [node name="Bullet4" parent="Bullets2" instance=ExtResource( 6 )]

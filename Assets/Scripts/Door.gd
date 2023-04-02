@@ -24,8 +24,8 @@ func _process(delta):
 
 func next():
 	get_parent().get_parent().get_node("door_go").play(0)
-	get_parent().get_parent().next_level = next_level
-	get_parent().get_parent().changelevel2("Levels", level, get_parent().colected)
+	get_parent().get_parent().next_level = next_level.trim_prefix(" ").trim_suffix(" ")
+	get_parent().get_parent().changelevel2("Levels", level.trim_prefix(" ").trim_suffix(" "), get_parent().colected)
 func unlock():
 	pass
 #	sprite.set_texture(Open)

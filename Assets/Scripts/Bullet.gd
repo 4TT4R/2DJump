@@ -30,7 +30,7 @@ func _ready():
 		rotation_degrees = 180
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if trigered:
+	if trigered && !get_parent().get_parent().is_paused:
 		position += velocity*delta
 		get_node("AnimatedSprite").visible = true
 		get_node("AnimatedSprite").play("Bullet")
