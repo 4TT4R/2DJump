@@ -38,9 +38,6 @@ Gold = "00:00:13"
 Silver = "00:00:18"
 Bronze = "00:00:20"
 
-[node name="Bullet" parent="." instance=ExtResource( 10 )]
-position = Vector2( 7510, 9272 )
-
 [node name="Saw" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1881, 8331 )
 
@@ -128,6 +125,11 @@ position = Vector2( 4051, 6772 )
 [node name="Door" parent="." instance=ExtResource( 7 )]
 position = Vector2( 9376, 8489 )
 next_level = "LvL01"
+
+[node name="Bullets" type="Node2D" parent="."]
+
+[node name="Bullet" parent="Bullets" instance=ExtResource( 10 )]
+position = Vector2( 7510, 9272 )
 
 [connection signal="area_entered" from="Area2D2" to="Area2D2" method="_on_Jump_area_entered"]
 [connection signal="area_exited" from="Area2D2" to="Area2D2" method="_on_Jump_area_exited"]

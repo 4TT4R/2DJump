@@ -26,9 +26,13 @@ var locked = Color("212121")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	medail = 0
+	
 	var key = "LvL"+Level
-	if get_parent().get_parent().get_parent().get_node("Save").unlocked_levels.has(key) && !Unlock:
+	if get_parent().get_parent().get_parent().get_node("Save").unlocked_levels.has(key):
 		Unlock = get_parent().get_parent().get_parent().get_node("Save").unlocked_levels[key]
+
+	elif key=="LvL00" || key=="LvL0":
+		Unlock =true
 	else:
 		get_parent().get_parent().get_parent().get_node("Save").unlocked_levels[key] = Unlock
 	

@@ -16,8 +16,7 @@ script/source = "extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
+	get_parent().get_node(\"Save\").loadT()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -46,7 +45,6 @@ def_zoom = Vector2( 2, 2.5 )
 
 [node name="Level_button" parent="pg1" instance=ExtResource( 1 )]
 position = Vector2( 128, 32.2 )
-Unlock = true
 Level_Name = "LvL0"
 Gold = "00:00:13"
 Silver = "00:00:18"
@@ -56,11 +54,17 @@ Bronze = "00:00:20"
 position = Vector2( 512, 32.2 )
 Level_Name = "LvL1"
 Level = "01"
+Gold = "00:00:18"
+Silver = "00:00:23"
+Bronze = "00:00:30"
 
 [node name="Level_button3" parent="pg1" instance=ExtResource( 1 )]
 position = Vector2( 896, 32.2 )
 Level_Name = "LvL2"
 Level = "02"
+Gold = "00:01:06"
+Silver = "00:01:20"
+Bronze = "00:01:28"
 
 [node name="Level_button4" parent="pg1" instance=ExtResource( 1 )]
 position = Vector2( 1280, 32.2 )

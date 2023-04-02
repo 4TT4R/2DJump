@@ -21,6 +21,9 @@ default_font = SubResource( 9 )
 [node name="LvL2" type="Node2D"]
 position = Vector2( 1342, 251 )
 script = ExtResource( 7 )
+Gold = "00:01:06"
+Silver = "00:01:20"
+Bronze = "00:01:28"
 
 [node name="Tiles" type="TileMap" parent="."]
 z_index = 1
@@ -55,7 +58,7 @@ next_level = "LvL03"
 level = "LvL02"
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 11444, 12724 )
+position = Vector2( 218, 8719 )
 BOUNDS_MAX = Vector2( 20000, 13786 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]

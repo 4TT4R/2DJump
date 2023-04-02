@@ -31,7 +31,7 @@ func _on_Continue_pressed():
 
 func _on_Main_Menu_pressed():
 	play_click()
-	get_parent().get_parent().get_parent().changelevel("Main Menu")
+	get_parent().get_parent().get_parent().changelevel("Levels")
 
 
 
@@ -81,6 +81,8 @@ func _on_Back2_pressed():
 func _on_New_Game_pressed():
 	play_click()
 	get_parent().get_parent().get_parent().get_node("Save").reset()
+	get_parent().get_parent().get_parent().get_node("Save").loadT()
+	
 	get_parent().get_parent().get_parent().changelevel("Levels")
 
 

@@ -48,6 +48,8 @@ func reset():
 		"levels_colatable" : LEVELS_COLATABLE_DEF,
 		"levels_time" : LEVELS_TIME_DEF
 	}
+	var dir = Directory.new()
+	dir.remove(FILE_NAME)
 	saveT()
 
 
@@ -76,5 +78,4 @@ func loadT():
 		else:
 			printerr("Corrupted data!")
 	else:
-
 		printerr("No saved data!")
