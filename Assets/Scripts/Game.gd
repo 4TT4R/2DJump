@@ -12,13 +12,15 @@ var pause
 var colected
 var times
 var is_paused = false
-export var Gold = "00:00:00"
-export var Silver = "00:00:00"
-export var Bronze = "00:00:00"
+var Gold = "00:00:00"
+var Silver = "00:00:00"
+var Bronze = "00:00:00"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	Gold = get_parent().gold
+	Silver = get_parent().silver
+	Bronze = get_parent().bronze
 func _process(delta):
 	if Input.is_action_just_pressed("esc") && !get_node("Player").dead:
 		_on_Pause_pressed()

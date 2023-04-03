@@ -16,6 +16,9 @@ var time = "--:--:--"
 var SFX = 1
 var paused = false
 var Music = 100
+var gold = "00:00:00"
+var silver = "00:00:00"
+var bronze = "00:00:00"
 export var is_pc = false
 var cam_pos = Vector2(0,0)
 # Called when the node enters the scene tree for the first time.

@@ -88,7 +88,9 @@ func _ready():
 
 func _on_Button_pressed():
 	if Unlock:
-		
+		get_parent().get_parent().get_parent().gold = Gold
+		get_parent().get_parent().get_parent().silver = Silver
+		get_parent().get_parent().get_parent().bronze = Bronze
 		get_parent().get_parent().get_parent().cam_pos = get_parent().get_parent().get_node("Camera2D").position
 		get_parent().get_parent().get_parent().get_node("click").play(0)
 		get_parent().get_parent().get_parent().changelevel(Level_Name)
