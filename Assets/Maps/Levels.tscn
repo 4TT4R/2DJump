@@ -602,104 +602,161 @@ position = Vector2( 6144, 0 )
 position = Vector2( 128, 32.2 )
 Level_Name = "LvL60"
 Level = "60"
+Gold = "00:00:54"
+Silver = "00:01:00"
+Bronze = "00:01:05"
 
 [node name="Level_button2" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 512, 32.2 )
 Level_Name = "LvL61"
 Level = "61"
+Gold = "00:01:15"
+Silver = "00:01:21"
+Bronze = "00:01:26"
 
 [node name="Level_button3" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 896, 32.2 )
 Level_Name = "LvL62"
 Level = "62"
+Gold = "00:00:42"
+Silver = "00:00:45"
+Bronze = "00:00:51"
 
 [node name="Level_button4" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 1280, 32.2 )
 Level_Name = "LvL63"
 Level = "63"
-Gold = "00:11:00"
-Silver = "00:15:00"
-Bronze = "00:20:00"
+Gold = "00:00:42"
+Silver = "00:00:45"
+Bronze = "00:00:51"
 
 [node name="Level_button5" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 1664, 32.2 )
 Level_Name = "LvL64"
 Level = "64"
+Gold = "00:00:57"
+Silver = "00:01:05"
+Bronze = "00:01:10"
 
 [node name="Level_button6" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 128, 323.4 )
 Level_Name = "LvL65"
 Level = "65"
+Gold = "00:01:18"
+Silver = "00:01:23"
+Bronze = "00:01:30"
 
 [node name="Level_button11" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 128, 611.6 )
 Level_Name = "LvL70"
 Level = "70"
+Gold = "00:01:05"
+Silver = "00:01:09"
+Bronze = "00:01:15"
 
 [node name="Level_button16" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 128, 899.8 )
 Level_Name = "LvL75"
 Level = "75"
+Gold = "00:01:34"
+Silver = "00:01:39"
+Bronze = "00:01:44"
 
 [node name="Level_button7" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 512, 323.4 )
 Level_Name = "LvL66"
 Level = "66"
+Gold = "00:00:56"
+Silver = "00:01:03"
+Bronze = "00:01:10"
 
 [node name="Level_button12" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 512, 611.6 )
 Level_Name = "LvL71"
 Level = "71"
+Gold = "00:01:34"
+Silver = "00:01:40"
+Bronze = "00:01:46"
 
 [node name="Level_button17" parent="pg4" instance=ExtResource( 1 )]
-position = Vector2( 512, 899.8 )
+position = Vector2( 514, 899.8 )
 Level_Name = "LvL76"
 Level = "76"
+Gold = "00:00:37"
+Silver = "00:00:41"
+Bronze = "00:00:48"
 
 [node name="Level_button8" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 896, 323.4 )
 Level_Name = "LvL67"
 Level = "67"
+Gold = "00:02:19"
+Silver = "00:02:24"
+Bronze = "00:02:30"
 
 [node name="Level_button13" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 896, 611.6 )
 Level_Name = "LvL72"
 Level = "72"
+Gold = "00:00:44"
+Silver = "00:00:48"
+Bronze = "00:00:53"
 
 [node name="Level_button18" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 896, 899.8 )
 Level_Name = "LvL77"
 Level = "77"
+Gold = "00:00:38"
+Silver = "00:00:43"
+Bronze = "00:00:49"
 
 [node name="Level_button9" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 1280, 323.4 )
 Level_Name = "LvL68"
 Level = "68"
+Gold = "00:00:38"
+Silver = "00:00:43"
+Bronze = "00:00:48"
 
 [node name="Level_button14" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 1280, 611.6 )
 Level_Name = "LvL73"
 Level = "73"
+Gold = "00:01:05"
+Silver = "00:01:10"
+Bronze = "00:01:16"
 
 [node name="Level_button19" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 1280, 899.8 )
 Level_Name = "LvL78"
 Level = "78"
+Gold = "00:00:45"
+Silver = "00:00:51"
+Bronze = "00:00:57"
 
 [node name="Level_button10" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 1664, 323.4 )
 Level_Name = "LvL69"
 Level = "69"
+Gold = "00:00:41"
+Silver = "00:00:45"
+Bronze = "00:00:53"
 
 [node name="Level_button15" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 1664, 611.6 )
 Level_Name = "LvL74"
 Level = "74"
+Gold = "00:00:54"
+Silver = "00:00:58"
+Bronze = "00:01:06"
 
 [node name="Level_button20" parent="pg4" instance=ExtResource( 1 )]
 position = Vector2( 1664, 899.8 )
 Level_Name = "LvL79"
 Level = "79"
+Gold = "00:00:58"
+Silver = "00:01:05"
+Bronze = "00:01:13"
 
 [node name="Buttons4" type="Node2D" parent="pg4"]
 position = Vector2( 1664, 1188 )
@@ -734,107 +791,161 @@ position = Vector2( 8192, 0 )
 position = Vector2( 128, 32.2 )
 Level_Name = "LvL80"
 Level = "80"
-Gold = "00:13:00"
-Silver = "00:18:00"
-Bronze = "00:20:00"
+Gold = "00:00:34"
+Silver = "00:00:38"
+Bronze = "00:00:42"
 
 [node name="Level_button2" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 512, 32.2 )
 Level_Name = "LvL81"
 Level = "81"
+Gold = "00:00:40"
+Silver = "00:00:46"
+Bronze = "00:00:52"
 
 [node name="Level_button3" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 896, 32.2 )
 Level_Name = "LvL82"
 Level = "82"
+Gold = "00:01:01"
+Silver = "00:01:07"
+Bronze = "00:01:13"
 
 [node name="Level_button4" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 1280, 32.2 )
 Level_Name = "LvL83"
 Level = "83"
-Gold = "00:11:00"
-Silver = "00:15:00"
-Bronze = "00:20:00"
+Gold = "00:01:00"
+Silver = "00:01:05"
+Bronze = "00:01:11"
 
 [node name="Level_button5" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 1664, 32.2 )
 Level_Name = "LvL84"
 Level = "84"
+Gold = "00:00:41"
+Silver = "00:00:45"
+Bronze = "00:00:51"
 
 [node name="Level_button6" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 128, 323.4 )
 Level_Name = "LvL85"
 Level = "85"
+Gold = "00:00:39"
+Silver = "00:00:43"
+Bronze = "00:00:51"
 
 [node name="Level_button11" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 128, 611.6 )
 Level_Name = "LvL90"
 Level = "90"
+Gold = "00:00:44"
+Silver = "00:00:49"
+Bronze = "00:00:53"
 
 [node name="Level_button16" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 128, 899.8 )
 Level_Name = "LvL95"
 Level = "95"
+Gold = "00:00:30"
+Silver = "00:00:36"
+Bronze = "00:00:41"
 
 [node name="Level_button7" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 512, 323.4 )
 Level_Name = "LvL86"
 Level = "86"
+Gold = "00:00:32"
+Silver = "00:00:39"
+Bronze = "00:00:46"
 
 [node name="Level_button12" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 512, 611.6 )
 Level_Name = "LvL91"
 Level = "91"
+Gold = "00:00:34"
+Silver = "00:00:38"
+Bronze = "00:00:43"
 
 [node name="Level_button17" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 512, 899.8 )
 Level_Name = "LvL96"
 Level = "96"
+Gold = "00:00:47"
+Silver = "00:00:52"
+Bronze = "00:00:55"
 
 [node name="Level_button8" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 896, 323.4 )
 Level_Name = "LvL87"
 Level = "87"
+Gold = "00:00:41"
+Silver = "00:00:45"
+Bronze = "00:00:51"
 
 [node name="Level_button13" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 896, 611.6 )
 Level_Name = "LvL92"
 Level = "92"
+Gold = "00:00:29"
+Silver = "00:00:33"
+Bronze = "00:00:36"
 
 [node name="Level_button18" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 896, 899.8 )
 Level_Name = "LvL97"
 Level = "97"
+Gold = "00:01:30"
+Silver = "00:01:36"
+Bronze = "00:01:45"
 
 [node name="Level_button9" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 1280, 323.4 )
 Level_Name = "LvL88"
 Level = "88"
+Gold = "00:00:50"
+Silver = "00:00:59"
+Bronze = "00:01:10"
 
 [node name="Level_button14" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 1280, 611.6 )
 Level_Name = "LvL93"
 Level = "93"
+Gold = "00:00:30"
+Silver = "00:00:36"
+Bronze = "00:00:45"
 
 [node name="Level_button19" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 1280, 899.8 )
 Level_Name = "LvL98"
 Level = "98"
+Gold = "00:00:29"
+Silver = "00:00:35"
+Bronze = "00:00:39"
 
 [node name="Level_button10" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 1664, 323.4 )
 Level_Name = "LvL89"
 Level = "89"
+Gold = "00:00:38"
+Silver = "00:00:42"
+Bronze = "00:00:46"
 
 [node name="Level_button15" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 1664, 611.6 )
 Level_Name = "LvL94"
 Level = "94"
+Gold = "00:00:30"
+Silver = "00:00:35"
+Bronze = "00:00:41"
 
 [node name="Level_button20" parent="pg5" instance=ExtResource( 1 )]
 position = Vector2( 1664, 899.8 )
 Level_Name = "LvL99"
 Level = "99"
+Gold = "00:01:00"
+Silver = "00:01:05"
+Bronze = "00:01:11"
 
 [node name="Buttons5" type="Node2D" parent="pg5"]
 position = Vector2( 1664, 1188 )
